@@ -1,0 +1,62 @@
+{
+    "1": {
+        "id": "1",
+        "shortLbl": "Jan",
+        "label": "Janvier"
+    },
+    "2": {
+        "id": "2",
+        "shortLbl": "Févr.",
+        "label": "Février"
+    },
+    "3": {
+        "id": "3",
+        "shortLbl": "Mars",
+        "label": "Mars"
+    },
+    "4": {
+        "id": "4",
+        "shortLbl": "Avril",
+        "label": "Avril"
+    },
+    "5": {
+        "id": "5",
+        "shortLbl": "Mai",
+        "label": "Mai"
+    },
+    "6": {
+        "id": "6",
+        "shortLbl": "Juin",
+        "label": "Juin"
+    },
+    "7": {
+        "id": "7",
+        "shortLbl": "Juill.",
+        "label": "Juillet"
+    },
+    "8": {
+        "id": "8",
+        "shortLbl": "Août",
+        "label": "Août"
+    },
+    "9": {
+        "id": "9",
+        "shortLbl": "Sept.",
+        "label": "Septembre"
+    },
+    "10": {
+        "id": "10",
+        "shortLbl": "Oct.",
+        "label": "Octobre"
+    },
+    "11": {
+        "id": "11",
+        "shortLbl": "Nov.",
+        "label": "Novembre"
+    },
+    "12": {
+        "id": "12",
+        "shortLbl": "Dec.",
+        "label": "Décembre"
+    }
+}

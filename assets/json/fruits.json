@@ -1,0 +1,1331 @@
+{
+    "1": {
+      "id": "1",
+      "label": "Ail",
+      "type": "legume",
+      "img_path": "ail.png",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "2": {
+      "id": "2",
+      "label": "Carotte",
+      "type": "legume",
+      "img_path": "carotte.png",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "3": {
+      "id": "3",
+      "label": "Céleri-rave",
+      "type": "legume",
+      "img_path": "celeri_boule.png",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "4": {
+      "id": "4",
+      "label": "Chou blanc",
+      "type": "legume",
+      "months": []
+    },
+    "5": {
+      "id": "5",
+      "label": "Chou frisé",
+      "type": "legume",
+      "img_path": "chou.png",
+      "months": []
+    },
+    "6": {
+      "id": "6",
+      "label": "Courge",
+      "type": "legume",
+      "img_path": "courge.png",
+      "months": [
+        "1",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "7": {
+      "id": "7",
+      "label": "Endive",
+      "type": "legume",
+      "img_path": "endive.png",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "8": {
+      "id": "8",
+      "label": "Frisée",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "10": {
+      "id": "10",
+      "label": "Panais",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "11": {
+      "id": "11",
+      "label": "Topinambour",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "12": {
+      "id": "12",
+      "label": "Pomme de terre (conservation)",
+      "type": "legume",
+      "months": []
+    },
+    "13": {
+      "id": "13",
+      "label": "Betterave",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "14": {
+      "id": "14",
+      "label": "Céleri-branche",
+      "type": "legume",
+      "img_path": "celeri.png",
+      "months": [
+        "1",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "15": {
+      "id": "15",
+      "label": "Chou",
+      "type": "legume",
+      "img_path": "chou.png",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "16": {
+      "id": "16",
+      "label": "Chou de Bruxelles",
+      "type": "legume",
+      "months": []
+    },
+    "17": {
+      "id": "17",
+      "label": "Chou rouge",
+      "type": "legume",
+      "months": []
+    },
+    "18": {
+      "id": "18",
+      "label": "Crosne",
+      "type": "legume",
+      "months": [
+        "3",
+        "11",
+        "12"
+      ]
+    },
+    "19": {
+      "id": "19",
+      "label": "Épinard",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "20": {
+      "id": "20",
+      "label": "Mâche",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "11",
+        "12"
+      ]
+    },
+    "21": {
+      "id": "21",
+      "label": "Oignon",
+      "type": "legume",
+      "months": [
+        "4",
+        "5"
+      ]
+    },
+    "22": {
+      "id": "22",
+      "label": "Poireau",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "23": {
+      "id": "23",
+      "label": "Salsifi",
+      "type": "legume",
+      "months": [
+        "2",
+        "3",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "24": {
+      "id": "24",
+      "label": "Amande",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "25": {
+      "id": "25",
+      "label": "Clémentine",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "11",
+        "12"
+      ]
+    },
+    "26": {
+      "id": "26",
+      "label": "Kiwi",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "11",
+        "12"
+      ]
+    },
+    "27": {
+      "id": "27",
+      "label": "Mandarine",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "11",
+        "12"
+      ]
+    },
+    "28": {
+      "id": "28",
+      "label": "Orange",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "11",
+        "12"
+      ]
+    },
+    "29": {
+      "id": "29",
+      "label": "Pamplemousse",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    "30": {
+      "id": "30",
+      "label": "Physalis",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "31": {
+      "id": "31",
+      "label": "Poire",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "32": {
+      "id": "32",
+      "label": "Pomme",
+      "type": "fruit",
+      "img_path": "pomme.png",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "33": {
+      "id": "33",
+      "label": "Citron",
+      "type": "fruit",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "34": {
+      "id": "34",
+      "label": "Kaki",
+      "type": "fruit",
+      "months": [
+        "1",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "35": {
+      "id": "35",
+      "label": "Abricot",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "36": {
+      "id": "36",
+      "label": "Cassis",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "37": {
+      "id": "37",
+      "label": "Fraise",
+      "type": "fruit",
+      "img_path": "fraise.png",
+      "months": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "38": {
+      "id": "38",
+      "label": "Framboise",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "10"
+      ]
+    },
+    "39": {
+      "id": "39",
+      "label": "Groseille",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "40": {
+      "id": "40",
+      "label": "Melon",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "41": {
+      "id": "41",
+      "label": "Pastèque",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "42": {
+      "id": "42",
+      "label": "Pêche",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "43": {
+      "id": "43",
+      "label": "Prune",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "44": {
+      "id": "44",
+      "label": "Raisin",
+      "type": "fruit",
+      "months": [
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "45": {
+      "id": "45",
+      "label": "Figue",
+      "type": "fruit",
+      "months": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "46": {
+      "id": "46",
+      "label": "Myrtille",
+      "type": "fruit",
+      "months": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "47": {
+      "id": "47",
+      "label": "Nectarine",
+      "type": "fruit",
+      "months": [
+        "7",
+        "8"
+      ]
+    },
+    "48": {
+      "id": "48",
+      "label": "Noisette",
+      "type": "fruit",
+      "months": [
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "49": {
+      "id": "49",
+      "label": "Noix",
+      "type": "fruit",
+      "months": [
+        "9",
+        "10"
+      ]
+    },
+    "50": {
+      "id": "50",
+      "label": "Pruneau",
+      "type": "fruit",
+      "months": [
+        "8",
+        "9"
+      ]
+    },
+    "51": {
+      "id": "51",
+      "label": "Baie de goji",
+      "type": "fruit",
+      "months": [
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "52": {
+      "id": "52",
+      "label": "Châtaigne",
+      "type": "fruit",
+      "months": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "53": {
+      "id": "53",
+      "label": "Mirabelle",
+      "type": "fruit",
+      "months": [
+        "8",
+        "9"
+      ]
+    },
+    "54": {
+      "id": "54",
+      "label": "Mûre",
+      "type": "fruit",
+      "months": [
+        "8",
+        "9"
+      ]
+    },
+    "55": {
+      "id": "55",
+      "label": "Artichaut",
+      "type": "legume",
+      "months": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "56": {
+      "id": "56",
+      "label": "Asperge",
+      "type": "legume",
+      "months": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    "57": {
+      "id": "57",
+      "label": "Blette",
+      "type": "legume",
+      "months": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "58": {
+      "id": "58",
+      "label": "Brocoli",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    "59": {
+      "id": "59",
+      "label": "Chou-fleur",
+      "type": "legume",
+      "months": [
+        "4",
+        "5"
+      ]
+    },
+    "60": {
+      "id": "60",
+      "label": "Concombre",
+      "type": "legume",
+      "months": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10"
+      ]
+    },
+    "61": {
+      "id": "61",
+      "label": "Courgette",
+      "type": "legume",
+      "months": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "62": {
+      "id": "62",
+      "label": "Échalote",
+      "type": "legume",
+      "months": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "63": {
+      "id": "63",
+      "label": "Fenouil",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    "64": {
+      "id": "64",
+      "label": "Haricot vert",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "65": {
+      "id": "65",
+      "label": "Laitue",
+      "type": "legume",
+      "img_path": "laitue.png",
+      "months": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "66": {
+      "id": "66",
+      "label": "Patate douce",
+      "type": "legume",
+      "months": [
+        "9",
+        "10"
+      ]
+    },
+    "67": {
+      "id": "67",
+      "label": "Poivron",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "68": {
+      "id": "68",
+      "label": "Potiron",
+      "type": "legume",
+      "months": [
+        "9"
+      ]
+    },
+    "69": {
+      "id": "69",
+      "label": "Rutabaga",
+      "type": "legume",
+      "months": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "70": {
+      "id": "70",
+      "label": "Aubergine",
+      "type": "legume",
+      "months": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "72": {
+      "id": "72",
+      "label": "Poivron",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "74": {
+      "id": "74",
+      "label": "Échalote",
+      "type": "legume",
+      "months": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "75": {
+      "id": "75",
+      "label": "Fenouil",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    "76": {
+      "id": "76",
+      "label": "Haricot vert",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "78": {
+      "id": "78",
+      "label": "Patate douce",
+      "type": "legume",
+      "months": [
+        "9",
+        "10"
+      ]
+    },
+    "79": {
+      "id": "79",
+      "label": "Poivron",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "80": {
+      "id": "80",
+      "label": "Aubergine",
+      "type": "legume",
+      "months": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "81": {
+      "id": "81",
+      "label": "Blette",
+      "type": "legume",
+      "months": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "82": {
+      "id": "82",
+      "label": "Brocoli",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    "83": {
+      "id": "83",
+      "label": "Cardon",
+      "type": "legume",
+      "months": [
+        "11"
+      ]
+    },
+    "85": {
+      "id": "85",
+      "label": "Crosne",
+      "type": "legume",
+      "months": [
+        "3",
+        "11",
+        "12"
+      ]
+    },
+    "86": {
+      "id": "86",
+      "label": "Concombre",
+      "type": "legume",
+      "months": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10"
+      ]
+    },
+    "88": {
+      "id": "88",
+      "label": "Échalote",
+      "type": "legume",
+      "months": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "89": {
+      "id": "89",
+      "label": "Fenouil",
+      "type": "legume",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    "90": {
+      "id": "90",
+      "label": "Frisée",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "91": {
+      "id": "91",
+      "label": "Mâche",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "11",
+        "12"
+      ]
+    },
+    "92": {
+      "id": "92",
+      "label": "Navet",
+      "type": "legume",
+      "img_path": "navet.png",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "93": {
+      "id": "93",
+      "label": "Panais",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "94": {
+      "id": "94",
+      "label": "Poireau",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "95": {
+      "id": "95",
+      "label": "Radis",
+      "type": "legume",
+      "months": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "96": {
+      "id": "96",
+      "label": "Salsifi",
+      "type": "legume",
+      "months": [
+        "2",
+        "3",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "97": {
+      "id": "97",
+      "label": "Topinambour",
+      "type": "legume",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "98": {
+      "id": "98",
+      "label": "Lentille",
+      "type": "cereale",
+      "months": [
+        "1",
+        "2",
+        "3",
+        "11",
+        "12"
+      ]
+    },
+    "99": {
+      "id": "99",
+      "label": "Avoine",
+      "type": "cereale",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "12"
+      ]
+    },
+    "100": {
+      "id": "100",
+      "label": "Orge",
+      "type": "cereale",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "8",
+        "12"
+      ]
+    },
+    "101": {
+      "id": "101",
+      "label": "Pois",
+      "type": "cereale",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "12"
+      ]
+    },
+    "102": {
+      "id": "102",
+      "label": "Seigle",
+      "type": "cereale",
+      "months": [
+        "6",
+        "7",
+        "8",
+        "12"
+      ]
+    },
+    "103": {
+      "id": "103",
+      "label": "Blé dur",
+      "type": "cereale",
+      "months": [
+        "7",
+        "8",
+        "12"
+      ]
+    },
+    "104": {
+      "id": "104",
+      "label": "Blé tendre",
+      "type": "cereale",
+      "months": [
+        "7",
+        "8",
+        "12"
+      ]
+    },
+    "105": {
+      "id": "105",
+      "label": "Fève",
+      "type": "cereale",
+      "months": [
+        "7",
+        "8",
+        "12"
+      ]
+    },
+    "106": {
+      "id": "106",
+      "label": "Haricot blanc",
+      "type": "cereale",
+      "months": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "107": {
+      "id": "107",
+      "label": "Maïs",
+      "type": "cereale",
+      "months": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    "108": {
+      "id": "108",
+      "label": "Quinoa",
+      "type": "cereale",
+      "months": [
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "109": {
+      "id": "109",
+      "label": "Riz",
+      "type": "cereale",
+      "months": [
+        "9",
+        "10"
+      ]
+    },
+    "110": {
+      "id": "110",
+      "label": "Sarrasin",
+      "type": "cereale",
+      "months": [
+        "9",
+        "10"
+      ]
+    },
+    "111": {
+      "id": "111",
+      "label": "Soja",
+      "type": "cereale",
+      "months": [
+        "10"
+      ]
+    },
+    "112": {
+      "id": "112",
+      "label": "Tournesol",
+      "type": "cereale",
+      "months": [
+        "9"
+      ]
+    },
+    "113": {
+      "id": "113",
+      "label": "Petit pois",
+      "type": "legume",
+      "months": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    "114": {
+      "id": "114",
+      "label": "Cerise",
+      "type": "fruit",
+      "months": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    "115": {
+      "id": "115",
+      "label": "Rhubarbe",
+      "type": "fruit",
+      "months": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    "116": {
+      "id": "116",
+      "label": "Tomate",
+      "type": "legume",
+      "months": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "117": {
+      "id": "117",
+      "label": "Chou romanesco",
+      "type": "legume",
+      "months": [
+        "6"
+      ]
+    },
+    "118": {
+      "id": "118",
+      "label": "Brugnon",
+      "type": "fruit",
+      "months": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "119": {
+      "id": "119",
+      "label": "Coing",
+      "type": "fruit",
+      "months": [
+        "9",
+        "10",
+        "11"
+      ]
+    }
+  }
