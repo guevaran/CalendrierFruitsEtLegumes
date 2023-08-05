@@ -3,7 +3,7 @@ import 'package:calendrier_fruits_et_legumes/components/month.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import 'package:flutter_scatter/flutter_scatter.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class Calendrier extends StatefulWidget {
   ValueNotifier<bool> showCereales;
@@ -20,13 +20,17 @@ class _CalendrierState extends State<Calendrier> {
   late Future<Map<String, dynamic>> _months;
   late Future<Map<String, dynamic>> _fruitsById;
   Map<String, dynamic>? _fruitsByMonth;
-  int _selectedMonth = 1;
+  late int _selectedMonth;
+  final _monthScrollController = ItemScrollController();
 
   @override
   void initState() {
     super.initState();
+
+    _selectedMonth = DateTime.now().month;
     _months = _getDataFromJsonFile('months');
     _fruitsById = _getDataFromJsonFile('fruits');
+
     _generateFruitsByMonth();
     widget.showCereales.addListener(() {
       _generateFruitsByMonth();
@@ -40,6 +44,9 @@ class _CalendrierState extends State<Calendrier> {
       _generateFruitsByMonth();
       setState(() => _fruitsByMonth);
     });
+
+    //After layout built, scroll to the current month
+    WidgetsBinding.instance.addPostFrameCallback((_) => _monthScrollController.jumpTo(index: _selectedMonth, alignment: 0.5));
   }
 
   Future<Map<String, dynamic>> _getDataFromJsonFile(String fileName) async {
@@ -76,107 +83,79 @@ class _CalendrierState extends State<Calendrier> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          // const SizedBox(height: 20),
-          Expanded(
-            child: Container(
-              // color: Colors.yellow,
-              alignment: Alignment.center,
-              child: FutureBuilder(
-                future: _fruitsById,
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Center(child: CircularProgressIndicator());
-                  } else if (snapshot.hasError) {
-                    debugPrint(snapshot.error.toString());
-                    return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
-                  } else if (snapshot.hasData) {
-                    return SingleChildScrollView(
-                      child: Wrap(
-                        alignment: WrapAlignment.center,
-                        crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
+    return Column(
+      children: [
+        Expanded(
+          child: Container(
+            alignment: Alignment.center,
+            child: FutureBuilder(
+              future: _fruitsById,
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                } else if (snapshot.hasError) {
+                  debugPrint(snapshot.error.toString());
+                  return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
+                } else if (snapshot.hasData) {
+                  return SingleChildScrollView(
+                    child: Wrap(
+                      alignment: WrapAlignment.center,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        if (_fruitsByMonth != null && _fruitsByMonth![_selectedMonth.toString()] != null) ...[
                           for (var fruit in _fruitsByMonth![_selectedMonth.toString()]) FruitTile(fruit: fruit),
                         ],
-                      ),
-                    );
-                  } else {
-                    return const Center(child: CircularProgressIndicator());
-                  }
-                },
-              ),
-              // child: Scatter(
-              //   delegate: ArchimedeanSpiralScatterDelegate(),
-              //   children: _fruitWidgets,
-              // ),
+                      ],
+                    ),
+                  );
+                } else {
+                  return const Center(child: CircularProgressIndicator());
+                }
+              },
             ),
           ),
-          // const SizedBox(height: 20),
-          Container(
-            height: 60,
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey.shade300),
-            ),
-            child: FutureBuilder(
-              future: _months,
-              builder: (context, snapshot) => ListView.separated(
-                scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.all(0),
-                itemCount: 12,
-                itemBuilder: (context, i) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Center(child: CircularProgressIndicator());
-                  } else if (snapshot.hasError) {
-                    debugPrint(snapshot.error.toString());
-                    return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
-                  } else if (snapshot.hasData) {
-                    dynamic month = snapshot.data![(i + 1).toString()];
-                    return Month(
-                      month: month,
-                      selected: _selectedMonth,
-                      onTap: () {
-                        setState(() {
-                          _selectedMonth = int.parse(month['id']);
-                        });
-                      },
-                    );
-                  } else {
-                    return const Center(child: CircularProgressIndicator());
-                  }
-                },
-                separatorBuilder: (context, i) => const VerticalDivider(
-                  // indent: 0,
-                  // endIndent: 0,
-                  width: 2,
-                  color: Colors.grey,
-                ),
+        ),
+        Container(
+          height: 60,
+          decoration: BoxDecoration(
+            border: Border.all(color: Colors.grey.shade300),
+          ),
+          child: FutureBuilder(
+            future: _months,
+            builder: (context, snapshot) => ScrollablePositionedList.separated(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.all(0),
+              itemCount: 12,
+              itemScrollController: _monthScrollController,
+              itemBuilder: (context, i) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                } else if (snapshot.hasError) {
+                  debugPrint(snapshot.error.toString());
+                  return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
+                } else if (snapshot.hasData) {
+                  dynamic month = snapshot.data![(i + 1).toString()];
+                  return Month(
+                    month: month,
+                    selected: _selectedMonth,
+                    onTap: () {
+                      setState(() {
+                        _selectedMonth = int.parse(month['id']);
+                      });
+                    },
+                  );
+                } else {
+                  return const Center(child: CircularProgressIndicator());
+                }
+              },
+              separatorBuilder: (context, i) => const VerticalDivider(
+                width: 2,
+                color: Colors.grey,
               ),
             ),
           ),
-
-          // SingleChildScrollView(
-          //   scrollDirection: Axis.horizontal,
-          //   child: Row(
-          //     children: <Widget>[
-          //       Month(lbl: 'Jan'),
-          //       Month(lbl: 'Févr.'),
-          //       Month(lbl: 'Mars'),
-          //       Month(lbl: 'Avril'),
-          //       Month(lbl: 'Mai'),
-          //       Month(lbl: 'Juin'),
-          //       Month(lbl: 'Juil.'),
-          //       Month(lbl: 'Aout'),
-          //       Month(lbl: 'Sept.'),
-          //       Month(lbl: 'Oct.'),
-          //       Month(lbl: 'Nov.'),
-          //       Month(lbl: 'Déc.'),
-          //     ],
-          //   ),
-          // ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

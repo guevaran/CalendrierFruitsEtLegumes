@@ -13,6 +13,7 @@ class _HomePageState extends State<HomePage> {
   final ValueNotifier<bool> _showFruits = ValueNotifier(true);
   final ValueNotifier<bool>  _showLegumes = ValueNotifier(true);
   final ValueNotifier<bool>  _showCereales = ValueNotifier(true);
+  // late String _title;
 
   static late final List<Widget> _navBarWidgets;
   
@@ -26,6 +27,8 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    // _title = 'Calendrier ${(_showFruits.value) ? 'Fruits,' : ''} ${(_showLegumes.value) ? 'Légumes,' : ''} ${(_showCereales.value) ? 'Céréales,' : ''}';
+    // _title = _title.substring(0, _title.length - 1);
     _navBarWidgets = <Widget>[
       Calendrier(showFruits: _showFruits, showLegumes: _showLegumes, showCereales: _showCereales),
       const Text(
@@ -49,10 +52,10 @@ class _HomePageState extends State<HomePage> {
                 PopupMenuItem(
                   value: 'fruits',
                   child: StatefulBuilder(
-                    builder: (context, _setState) => CheckboxListTile(
+                    builder: (context, setState) => CheckboxListTile(
                       title: const Text('Fruits'),
                       value: _showFruits.value,
-                      onChanged: (value) => _setState(() => _showFruits.value = value!),
+                      onChanged: (value) => setState(() => _showFruits.value = value!),
                     ),
                   ),
                 ),

@@ -26,7 +26,7 @@ class _FruitTileState extends State<FruitTile> {
                 minWidth: 50,
               ),
               child: Image(
-                image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/pomme.png'),
+                image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/default_fruit.png'),
                 // height: 70,
                 fit: BoxFit.contain,
               ),
