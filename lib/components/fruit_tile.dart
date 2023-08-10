@@ -1,9 +1,10 @@
+import 'package:calendrier_fruits_et_legumes/pages/fruit_detail_page.dart';
 import 'package:flutter/material.dart';
 
 class FruitTile extends StatefulWidget {
-  dynamic fruit;
+  final dynamic fruit;
 
-  FruitTile({super.key, required this.fruit});
+  const FruitTile({super.key, required this.fruit});
 
   @override
   State<FruitTile> createState() => _FruitTileState();
@@ -13,7 +14,9 @@ class _FruitTileState extends State<FruitTile> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => FruitDetailPage(fruit: widget.fruit)));
+      },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         child: Column(
@@ -25,10 +28,13 @@ class _FruitTileState extends State<FruitTile> {
                 minHeight: 50,
                 minWidth: 50,
               ),
-              child: Image(
-                image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/default_fruit.png'),
-                // height: 70,
-                fit: BoxFit.contain,
+              child: Hero(
+                tag: (widget.fruit['img_path'] != null) ? widget.fruit['img_path'] : 'f${widget.fruit['id']}',
+                child: Image(
+                  image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/default_fruit.png'),
+                  // height: 70,
+                  fit: BoxFit.contain,
+                ),
               ),
             ),
             Padding(

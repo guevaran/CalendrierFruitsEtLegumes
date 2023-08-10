@@ -226,6 +226,7 @@
       "id": "22",
       "label": "Poireau",
       "type": "legume",
+      "img_path": "poireau.png",
       "months": [
         "1",
         "2",
@@ -507,6 +508,7 @@
       "id": "44",
       "label": "Raisin",
       "type": "fruit",
+      "img_path": "raisin.png",
       "months": [
         "8",
         "9",
@@ -529,6 +531,7 @@
       "id": "46",
       "label": "Myrtille",
       "type": "fruit",
+      "img_path": "myrtille.png",
       "months": [
         "7",
         "8",
@@ -540,6 +543,7 @@
       "id": "47",
       "label": "Nectarine",
       "type": "fruit",
+      "img_path": "nectarine.png",
       "months": [
         "7",
         "8"
@@ -549,6 +553,7 @@
       "id": "48",
       "label": "Noisette",
       "type": "fruit",
+      "img_path": "noisette.png",
       "months": [
         "8",
         "9",
@@ -559,6 +564,7 @@
       "id": "49",
       "label": "Noix",
       "type": "fruit",
+      "img_path": "noix.png",
       "months": [
         "9",
         "10"
@@ -568,6 +574,7 @@
       "id": "50",
       "label": "Pruneau",
       "type": "fruit",
+      "img_path": "pruneau.png",
       "months": [
         "8",
         "9"
@@ -577,6 +584,7 @@
       "id": "51",
       "label": "Baie de goji",
       "type": "fruit",
+      "img_path": "baies_goji.png",
       "months": [
         "8",
         "9",
@@ -587,6 +595,7 @@
       "id": "52",
       "label": "Châtaigne",
       "type": "fruit",
+      "img_path": "chataigne.png",
       "months": [
         "10",
         "11",
@@ -596,6 +605,7 @@
     "53": {
       "id": "53",
       "label": "Mirabelle",
+      "img_path": "mirabelle.png",
       "type": "fruit",
       "months": [
         "8",
@@ -606,6 +616,7 @@
       "id": "54",
       "label": "Mûre",
       "type": "fruit",
+      "img_path": "mures.png",
       "months": [
         "8",
         "9"
@@ -696,6 +707,7 @@
       "id": "61",
       "label": "Courgette",
       "type": "legume",
+      "img_path": "courgette.png",
       "months": [
         "5",
         "6",
@@ -709,6 +721,7 @@
       "id": "62",
       "label": "Échalote",
       "type": "legume",
+      "img_path": "echalotte.png",
       "months": [
         "10",
         "11",
@@ -719,6 +732,7 @@
       "id": "63",
       "label": "Fenouil",
       "type": "legume",
+      "img_path": "fenouil.png",
       "months": [
         "6",
         "7",
@@ -732,6 +746,7 @@
       "id": "64",
       "label": "Haricot vert",
       "type": "legume",
+      "img_path": "haricot_vert.png",
       "months": [
         "6",
         "7",
@@ -759,6 +774,7 @@
       "id": "66",
       "label": "Patate douce",
       "type": "legume",
+      "img_path": "patate_douce.png",
       "months": [
         "9",
         "10"
@@ -768,6 +784,7 @@
       "id": "67",
       "label": "Poivron",
       "type": "legume",
+      "img_path": "poivron.png",
       "months": [
         "6",
         "7",
@@ -807,59 +824,6 @@
         "10"
       ]
     },
-    "72": {
-      "id": "72",
-      "label": "Poivron",
-      "type": "legume",
-      "months": [
-        "6",
-        "7",
-        "8",
-        "9"
-      ]
-    },
-    "74": {
-      "id": "74",
-      "label": "Échalote",
-      "type": "legume",
-      "months": [
-        "10",
-        "11",
-        "12"
-      ]
-    },
-    "76": {
-      "id": "76",
-      "label": "Haricot vert",
-      "type": "legume",
-      "months": [
-        "6",
-        "7",
-        "8",
-        "9",
-        "10"
-      ]
-    },
-    "78": {
-      "id": "78",
-      "label": "Patate douce",
-      "type": "legume",
-      "months": [
-        "9",
-        "10"
-      ]
-    },
-    "79": {
-      "id": "79",
-      "label": "Poivron",
-      "type": "legume",
-      "months": [
-        "6",
-        "7",
-        "8",
-        "9"
-      ]
-    },
     "83": {
       "id": "83",
       "label": "Cardon",
@@ -874,16 +838,6 @@
       "type": "legume",
       "months": [
         "3",
-        "11",
-        "12"
-      ]
-    },
-    "88": {
-      "id": "88",
-      "label": "Échalote",
-      "type": "legume",
-      "months": [
-        "10",
         "11",
         "12"
       ]
@@ -982,6 +936,7 @@
       "id": "99",
       "label": "Avoine",
       "type": "cereale",
+      "img_path": "avoine.png",
       "months": [
         "6",
         "7",
@@ -993,6 +948,7 @@
       "id": "100",
       "label": "Orge",
       "type": "cereale",
+      "img_path": "orge.png",
       "months": [
         "6",
         "7",
@@ -1005,6 +961,7 @@
       "id": "101",
       "label": "Pois",
       "type": "cereale",
+      "img_path": "pois.png",
       "months": [
         "6",
         "7",
@@ -1068,6 +1025,7 @@
       "id": "107",
       "label": "Maïs",
       "type": "cereale",
+      "img_path": "mais.png",
       "months": [
         "7",
         "8",
@@ -1147,6 +1105,7 @@
       "id": "115",
       "label": "Rhubarbe",
       "type": "fruit",
+      "img_path": "rhubarb.png",
       "months": [
         "5",
         "6",
@@ -1179,6 +1138,7 @@
       "id": "118",
       "label": "Brugnon",
       "type": "fruit",
+      "img_path": "nectarine.png",
       "months": [
         "6",
         "7",
@@ -1189,6 +1149,7 @@
       "id": "119",
       "label": "Coing",
       "type": "fruit",
+      "img_path": "coing.png",
       "months": [
         "9",
         "10",

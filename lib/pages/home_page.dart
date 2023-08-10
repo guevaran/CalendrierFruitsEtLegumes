@@ -1,3 +1,4 @@
+import 'package:calendrier_fruits_et_legumes/components/liste.dart';
 import 'package:calendrier_fruits_et_legumes/components/calendrier.dart';
 import 'package:flutter/material.dart';
 
@@ -11,12 +12,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   final ValueNotifier<bool> _showFruits = ValueNotifier(true);
-  final ValueNotifier<bool>  _showLegumes = ValueNotifier(true);
-  final ValueNotifier<bool>  _showCereales = ValueNotifier(true);
+  final ValueNotifier<bool> _showLegumes = ValueNotifier(true);
+  final ValueNotifier<bool> _showCereales = ValueNotifier(true);
   // late String _title;
 
   static late final List<Widget> _navBarWidgets;
-  
 
   void _onItemTapped(int index) {
     setState(() {
@@ -31,9 +31,7 @@ class _HomePageState extends State<HomePage> {
     // _title = _title.substring(0, _title.length - 1);
     _navBarWidgets = <Widget>[
       Calendrier(showFruits: _showFruits, showLegumes: _showLegumes, showCereales: _showCereales),
-      const Text(
-        'Liste',
-      ),
+      Liste(showFruits: _showFruits, showLegumes: _showLegumes, showCereales: _showCereales),
     ];
   }
 
@@ -62,20 +60,20 @@ class _HomePageState extends State<HomePage> {
                 PopupMenuItem(
                   value: 'legumes',
                   child: StatefulBuilder(
-                    builder: (context, _setState) => CheckboxListTile(
+                    builder: (context, setState) => CheckboxListTile(
                       title: const Text('Légumes'),
                       value: _showLegumes.value,
-                      onChanged: (value) => _setState(() => _showLegumes.value = value!),
+                      onChanged: (value) => setState(() => _showLegumes.value = value!),
                     ),
                   ),
                 ),
                 PopupMenuItem(
                   value: 'cereales',
                   child: StatefulBuilder(
-                    builder: (context, _setState) => CheckboxListTile(
+                    builder: (context, setState) => CheckboxListTile(
                       title: const Text('Céréales'),
                       value: _showCereales.value,
-                      onChanged: (value) => _setState(() => _showCereales.value = value!),
+                      onChanged: (value) => setState(() => _showCereales.value = value!),
                     ),
                   ),
                 ),
@@ -87,6 +85,11 @@ class _HomePageState extends State<HomePage> {
             //       break;
             //   }
             // },
+          ),
+          PopupMenuButton(
+            itemBuilder: (context) => [
+              PopupMenuItem(child: Text("Dons")),
+            ],
           ),
         ],
       ),

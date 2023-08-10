@@ -6,11 +6,11 @@ import 'package:flutter/services.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class Calendrier extends StatefulWidget {
-  ValueNotifier<bool> showCereales;
-  ValueNotifier<bool> showFruits;
-  ValueNotifier<bool> showLegumes;
+  final ValueNotifier<bool> showCereales;
+  final ValueNotifier<bool> showFruits;
+  final ValueNotifier<bool> showLegumes;
 
-  Calendrier({super.key, required this.showFruits, required this.showLegumes, required this.showCereales});
+  const Calendrier({super.key, required this.showFruits, required this.showLegumes, required this.showCereales});
 
   @override
   State<Calendrier> createState() => _CalendrierState();
