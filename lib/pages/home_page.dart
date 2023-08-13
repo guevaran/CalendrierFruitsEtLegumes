@@ -1,6 +1,8 @@
+import 'package:calendrier_fruits_et_legumes/components/checkbox_button.dart';
 import 'package:calendrier_fruits_et_legumes/components/liste.dart';
 import 'package:calendrier_fruits_et_legumes/components/calendrier.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -43,57 +45,112 @@ class _HomePageState extends State<HomePage> {
         actions: [
           PopupMenuButton(
             color: Theme.of(context).colorScheme.background,
-            icon: const Icon(Icons.filter_alt),
+            icon: const Icon(Icons.sort),
             itemBuilder: (context) {
               return [
-                // CheckedPopupMenuItem(value: _showFruits, child: const Text('Fruits'),),
                 PopupMenuItem(
-                  value: 'fruits',
-                  child: StatefulBuilder(
-                    builder: (context, setState) => CheckboxListTile(
-                      title: const Text('Fruits'),
-                      value: _showFruits.value,
-                      onChanged: (value) => setState(() => _showFruits.value = value!),
-                    ),
-                  ),
+                  value: 'pertinence',
+                  child: Text('Pertinence'),
                 ),
                 PopupMenuItem(
-                  value: 'legumes',
-                  child: StatefulBuilder(
-                    builder: (context, setState) => CheckboxListTile(
-                      title: const Text('Légumes'),
-                      value: _showLegumes.value,
-                      onChanged: (value) => setState(() => _showLegumes.value = value!),
-                    ),
-                  ),
-                ),
-                PopupMenuItem(
-                  value: 'cereales',
-                  child: StatefulBuilder(
-                    builder: (context, setState) => CheckboxListTile(
-                      title: const Text('Céréales'),
-                      value: _showCereales.value,
-                      onChanged: (value) => setState(() => _showCereales.value = value!),
-                    ),
-                  ),
+                  value: 'alphabet',
+                  child: Text('Alphabet'),
                 ),
               ];
             },
-            // onSelected: (value) {
-            //   switch (value) {
-            //     case 'settings':
-            //       break;
-            //   }
-            // },
+            onSelected: (value) {
+              switch (value) {
+                case 'pertinence':
+                  break;
+                case 'alphabet':
+                  break;
+              }
+            },
           ),
           PopupMenuButton(
             itemBuilder: (context) => [
-              PopupMenuItem(child: Text("Dons")),
+              const PopupMenuItem(
+                value: 'donate',
+                child: SizedBox(
+                  width: 140,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Image(image: AssetImage("assets/imgs/kofi.png"), height: 25),
+                      SizedBox(width: 10),
+                      Text("Faire un don", style: TextStyle(fontWeight: FontWeight.bold)),
+                    ],
+                  ),
+                ),
+              ),
             ],
+            onSelected: (value) {
+              switch (value) {
+                case 'donate':
+                  () async {
+                    try {
+                      await launchUrlString("https://ko-fi.com/nicolasguevara");
+                    } catch (e) {
+                      debugPrint("Error: $e");
+                    }
+                  }();
+                  break;
+              }
+            },
           ),
         ],
       ),
-      body: _navBarWidgets.elementAt(_selectedIndex),
+      body: Column(
+        children: [
+          Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              boxShadow: <BoxShadow>[BoxShadow(color: Theme.of(context).colorScheme.secondary, blurRadius: 4.0, offset: const Offset(0.0, 0.60))],
+              color: Theme.of(context).colorScheme.background,
+            ),
+            // child: SingleChildScrollView(
+            //   scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(5),
+                  child: Icon(Icons.filter_alt, color: Theme.of(context).colorScheme.secondary),
+                ),
+                CheckboxButton(
+                  text: "Fruits",
+                  value: _showFruits.value,
+                  onTap: () {
+                    setState(() {
+                      _showFruits.value = !_showFruits.value;
+                    });
+                  },
+                ),
+                CheckboxButton(
+                  text: "Légumes",
+                  value: _showLegumes.value,
+                  onTap: () {
+                    setState(() {
+                      _showLegumes.value = !_showLegumes.value;
+                    });
+                  },
+                ),
+                CheckboxButton(
+                  text: "Céréales",
+                  value: _showCereales.value,
+                  onTap: () {
+                    setState(() {
+                      _showCereales.value = !_showCereales.value;
+                    });
+                  },
+                ),
+              ],
+            ),
+            // ),
+          ),
+          Expanded(child: _navBarWidgets.elementAt(_selectedIndex)),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(

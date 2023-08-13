@@ -118,7 +118,8 @@ class _CalendrierState extends State<Calendrier> {
         Container(
           height: 60,
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.grey.shade300),
+            border: Border.all(width: 2, color: Colors.grey.shade400),
+            // boxShadow: <BoxShadow>[BoxShadow(color: Theme.of(context).colorScheme.secondary, blurRadius: 2.0, offset: const Offset(0.0, -0.6))],
           ),
           child: FutureBuilder(
             future: _months,

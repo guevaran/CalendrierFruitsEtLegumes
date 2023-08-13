@@ -78,28 +78,58 @@ class _ListeState extends State<Liste> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: _months,
-      builder: (context1, smonths) => FutureBuilder(
-        future: _fruitsById,
-        builder: (context, snapshot) => ListView.separated(
-          itemBuilder: (context, i) {
-            if (snapshot.connectionState == ConnectionState.waiting || smonths.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            } else if (snapshot.hasError || smonths.hasError) {
-              debugPrint(snapshot.error.toString());
-              debugPrint(smonths.error.toString());
-              return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
-            } else if (snapshot.hasData || smonths.hasData) {
-              return FruitListTile(fruit: _filteredFruits![i], months: smonths.data!, monthsScrollControllerGroup: _monthsScrollControllers);
-            } else {
-              return const Center(child: CircularProgressIndicator());
-            }
-          },
-          separatorBuilder: (context, snapshot) => const Divider(),
-          itemCount: _filteredFruits!.length,
+    return Column(
+      children: [
+        Expanded(
+          child: FutureBuilder(
+            future: _months,
+            builder: (context1, smonths) => FutureBuilder(
+              future: _fruitsById,
+              builder: (context, snapshot) => ListView.separated(
+                itemBuilder: (context, i) {
+                  if (snapshot.connectionState == ConnectionState.waiting || smonths.connectionState == ConnectionState.waiting) {
+                    return const Center(child: CircularProgressIndicator());
+                  } else if (snapshot.hasError || smonths.hasError) {
+                    debugPrint(snapshot.error.toString());
+                    debugPrint(smonths.error.toString());
+                    return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
+                  } else if (snapshot.hasData || smonths.hasData) {
+                    return FruitListTile(fruit: _filteredFruits![i], months: smonths.data!, monthsScrollControllerGroup: _monthsScrollControllers);
+                  } else {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                },
+                separatorBuilder: (context, snapshot) => const Divider(),
+                itemCount: _filteredFruits!.length,
+              ),
+            ),
+          ),
         ),
-      ),
+        Container(
+          // height: 100,
+          padding: EdgeInsets.all(10),
+          width: double.infinity,
+          decoration: BoxDecoration(
+            boxShadow: <BoxShadow>[BoxShadow(color: Theme.of(context).colorScheme.secondary, blurRadius: 4.0, offset: const Offset(0.0, -0.60))],
+            color: Theme.of(context).colorScheme.background,
+            border: Border(
+              bottom: BorderSide(
+                width: 2,
+                color: Colors.grey.shade400,
+              ),
+            ),
+          ),
+          child: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8),
+                child: Icon(Icons.search, color: Theme.of(context).colorScheme.secondary),
+              ),
+              Expanded(child: TextField()),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
