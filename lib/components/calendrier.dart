@@ -9,8 +9,9 @@ class Calendrier extends StatefulWidget {
   final ValueNotifier<bool> showCereales;
   final ValueNotifier<bool> showFruits;
   final ValueNotifier<bool> showLegumes;
+  final ValueNotifier<String> sortBy;
 
-  const Calendrier({super.key, required this.showFruits, required this.showLegumes, required this.showCereales});
+  const Calendrier({super.key, required this.showFruits, required this.showLegumes, required this.showCereales, required this.sortBy});
 
   @override
   State<Calendrier> createState() => _CalendrierState();
@@ -22,6 +23,13 @@ class _CalendrierState extends State<Calendrier> {
   Map<String, dynamic>? _fruitsByMonth;
   late int _selectedMonth;
   final _monthScrollController = ItemScrollController();
+
+  @override
+  void setState(fn) {
+    if(mounted) {
+      super.setState(fn);
+    }
+  }
 
   @override
   void initState() {
@@ -44,6 +52,10 @@ class _CalendrierState extends State<Calendrier> {
       _generateFruitsByMonth();
       setState(() => _fruitsByMonth);
     });
+    widget.sortBy.addListener(() {
+      _generateFruitsByMonth();
+      setState(() => _fruitsByMonth);
+    });
 
     //After layout built, scroll to the current month
     WidgetsBinding.instance.addPostFrameCallback((_) => _monthScrollController.jumpTo(index: _selectedMonth, alignment: 0.5));
@@ -58,9 +70,19 @@ class _CalendrierState extends State<Calendrier> {
     _fruitsById.then((fruitsById) {
       for (var k in fruitsById.keys) {
         for (var i = 1; i <= 12; i++) {
+          _fruitsByMonth!.putIfAbsent(i.toString(), () => []);
           if (fruitsById[k]['months'].contains(i.toString()) && _checkFruitType(fruitsById[k]['type'])) {
-            _fruitsByMonth!.putIfAbsent(i.toString(), () => []).add(fruitsById[k]);
+            _fruitsByMonth![i.toString()].add(fruitsById[k]);
           }
+        }
+      }
+
+      // sorting
+      for (var i = 1; i <= 12; i++) {
+        switch (widget.sortBy.value) {
+          case 'alphabet':
+            _fruitsByMonth![i.toString()].sort((e1, e2) => e1['label'].compareTo(e2['label']) as int);
+            break;
         }
       }
     });

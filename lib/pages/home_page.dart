@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> {
   final ValueNotifier<bool> _showFruits = ValueNotifier(true);
   final ValueNotifier<bool> _showLegumes = ValueNotifier(true);
   final ValueNotifier<bool> _showCereales = ValueNotifier(true);
+  final ValueNotifier<String> _sortBy = ValueNotifier('pertinence');
   // late String _title;
 
   static late final List<Widget> _navBarWidgets;
@@ -32,8 +33,8 @@ class _HomePageState extends State<HomePage> {
     // _title = 'Calendrier ${(_showFruits.value) ? 'Fruits,' : ''} ${(_showLegumes.value) ? 'Légumes,' : ''} ${(_showCereales.value) ? 'Céréales,' : ''}';
     // _title = _title.substring(0, _title.length - 1);
     _navBarWidgets = <Widget>[
-      Calendrier(showFruits: _showFruits, showLegumes: _showLegumes, showCereales: _showCereales),
-      Liste(showFruits: _showFruits, showLegumes: _showLegumes, showCereales: _showCereales),
+      Calendrier(showFruits: _showFruits, showLegumes: _showLegumes, showCereales: _showCereales, sortBy: _sortBy),
+      Liste(showFruits: _showFruits, showLegumes: _showLegumes, showCereales: _showCereales, sortBy: _sortBy),
     ];
   }
 
@@ -48,11 +49,11 @@ class _HomePageState extends State<HomePage> {
             icon: const Icon(Icons.sort),
             itemBuilder: (context) {
               return [
-                PopupMenuItem(
+                const PopupMenuItem(
                   value: 'pertinence',
                   child: Text('Pertinence'),
                 ),
-                PopupMenuItem(
+                const PopupMenuItem(
                   value: 'alphabet',
                   child: Text('Alphabet'),
                 ),
@@ -61,8 +62,10 @@ class _HomePageState extends State<HomePage> {
             onSelected: (value) {
               switch (value) {
                 case 'pertinence':
+                  _sortBy.value = 'pertinence';
                   break;
                 case 'alphabet':
+                  _sortBy.value = 'alphabet';
                   break;
               }
             },

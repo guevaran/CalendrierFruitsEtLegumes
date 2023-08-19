@@ -1,4 +1,5 @@
 import 'package:calendrier_fruits_et_legumes/components/fruit_list_tile.dart';
+import 'package:calendrier_fruits_et_legumes/utils.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
@@ -8,8 +9,9 @@ class Liste extends StatefulWidget {
   final ValueNotifier<bool> showCereales;
   final ValueNotifier<bool> showFruits;
   final ValueNotifier<bool> showLegumes;
+  final ValueNotifier<String> sortBy;
 
-  const Liste({super.key, required this.showFruits, required this.showLegumes, required this.showCereales});
+  const Liste({super.key, required this.showFruits, required this.showLegumes, required this.showCereales, required this.sortBy});
 
   @override
   State<Liste> createState() => _ListeState();
@@ -22,11 +24,18 @@ class _ListeState extends State<Liste> {
   final LinkedScrollControllerGroup _monthsScrollControllers = LinkedScrollControllerGroup();
 
   @override
+  void setState(fn) {
+    if (mounted) {
+      super.setState(fn);
+    }
+  }
+
+  @override
   void initState() {
     super.initState();
 
-    _months = _getDataFromJsonFile('months');
-    _fruitsById = _getDataFromJsonFile('fruits');
+    _months = getDataFromJsonFile('months');
+    _fruitsById = getDataFromJsonFile('fruits');
 
     _filterFruits();
     widget.showCereales.addListener(() {
@@ -41,22 +50,27 @@ class _ListeState extends State<Liste> {
       _filterFruits();
       setState(() => _filteredFruits);
     });
+    widget.sortBy.addListener(() {
+      _filterFruits();
+      setState(() => _filteredFruits);
+    });
 
-    //After layout built, scroll to the current month
-    // WidgetsBinding.instance.addPostFrameCallback((_) => _monthScrollController.jumpTo(index: DateTime.now().month, alignment: 0.5));
   }
 
-  Future<Map<String, dynamic>> _getDataFromJsonFile(String fileName) async {
-    return json.decode(await rootBundle.loadString('assets/json/$fileName.json'));
-  }
-
-  void _filterFruits() {
+  void _filterFruits([String? searchValue]) {
     _filteredFruits = [];
     _fruitsById.then((fruitsById) {
       for (var k in fruitsById.keys) {
-        if (_checkFruitType(fruitsById[k]['type'])) {
+        if (_checkFruitType(fruitsById[k]['type']) && _checkSearchBar(fruitsById[k]['label'], searchValue)) {
           _filteredFruits!.add(fruitsById[k]);
         }
+      }
+
+      // sorting
+      switch (widget.sortBy.value) {
+        case 'alphabet':
+          _filteredFruits!.sort((e1, e2) => e1['label'].compareTo(e2['label']));
+          break;
       }
     });
   }
@@ -74,6 +88,19 @@ class _ListeState extends State<Liste> {
         break;
     }
     return false;
+  }
+
+  bool _checkSearchBar(String fruitLabel, String? searchValue) {
+    if (searchValue == null) {
+      // Search bar empty
+      return true;
+    } else {
+      if (formatForSearch(fruitLabel).startsWith(formatForSearch(searchValue))) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 
   @override
@@ -125,7 +152,14 @@ class _ListeState extends State<Liste> {
                 padding: const EdgeInsets.all(8),
                 child: Icon(Icons.search, color: Theme.of(context).colorScheme.secondary),
               ),
-              Expanded(child: TextField()),
+              Expanded(
+                child: TextField(
+                  onChanged: (value) {
+                    _filterFruits(value);
+                    setState(() => _filteredFruits);
+                  },
+                ),
+              ),
             ],
           ),
         ),
