@@ -40,14 +40,29 @@ class _FruitDetailPageState extends State<FruitDetailPage> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: const Text('test description'),
+          const SizedBox(height: 10),
+          const Text(
+            'Description :',
+            style: TextStyle(
+              decoration: TextDecoration.underline,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-          const Text('Saison :'),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+            child: Text(widget.fruit['description']),
+          ),
+          const SizedBox(height: 10),
+          const Text(
+            'Saison :',
+            style: TextStyle(
+              decoration: TextDecoration.underline,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           Container(
             height: 80,
-            padding: EdgeInsets.symmetric(horizontal: 50),
+            padding: const EdgeInsets.symmetric(horizontal: 40),
             child: FutureBuilder(
               future: _months,
               builder: (context, smonths) {
@@ -61,7 +76,7 @@ class _FruitDetailPageState extends State<FruitDetailPage> {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        for (dynamic month in smonths.data!.values) Month(month: month, fruit: widget.fruit),
+                        for (dynamic month in smonths.data!.values) Month(month: month, fruit: widget.fruit, horizontalPadding: 5),
                       ],
                     ),
                   );

@@ -67,7 +67,7 @@ class _FruitListTileState extends State<FruitListTile> {
                 controller: _monthsScrollController,
                 child: Row(
                   children: [
-                    for (dynamic month in widget.months.values) Month(month: month, fruit: widget.fruit),
+                    for (dynamic month in widget.months.values) Month(month: month, fruit: widget.fruit, horizontalPadding: 5),
                   ],
                 ),
               ),

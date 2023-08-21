@@ -3,7 +3,7 @@ import 'package:simple_icons/simple_icons.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 ///The 4 Official Kofi Button Colors
-enum KofiColor { Blue, Black, Orange, Red, Grey }
+enum KofiColor { blue, black, orange, red, grey }
 
 ///A button to use if you link to Ko-fi
 class KofiButton extends StatelessWidget {
@@ -33,7 +33,7 @@ class KofiButton extends StatelessWidget {
     Key? key,
     this.text = "Support me on Ko-fi",
     required this.kofiName,
-    this.kofiColor = KofiColor.Blue,
+    this.kofiColor = KofiColor.blue,
     this.onDonation,
     this.style,
     this.onLaunchURL,
@@ -46,13 +46,13 @@ class KofiButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     assert(kofiName.isNotEmpty);
-    final Map<String, Color> _colors = {
-      "KofiColor.Blue": Color(0xff29ABE0),
-      "KofiColor.Red": Color(0xffFF5E5B),
-      "KofiColor.Orange": Color(0xffFBAA19),
-      "KofiColor.Black": Color(0xff434B57),
-      "KofiColor.Grey": Color(0xff9E9E9E)
-    };
+    // final Map<String, Color> _colors = {
+    //   "KofiColor.Blue": Color(0xff29ABE0),
+    //   "KofiColor.Red": Color(0xffFF5E5B),
+    //   "KofiColor.Orange": Color(0xffFBAA19),
+    //   "KofiColor.Black": Color(0xff434B57),
+    //   "KofiColor.Grey": Color(0xff9E9E9E)
+    // };
     return ElevatedButton.icon(
       onPressed: !isEnabled
           ? null
@@ -68,7 +68,7 @@ class KofiButton extends StatelessWidget {
                 onDonation!();
               }
             },
-      icon: Icon(SimpleIcons.kofi),
+      icon: const Icon(SimpleIcons.kofi),
       label: Text(text),
     );
     // previous code

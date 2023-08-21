@@ -8,7 +8,7 @@ class CheckboxButton extends StatelessWidget {
   final double marginHorizontal;
   final double marginVertical;
 
-  CheckboxButton({
+  const CheckboxButton({
     Key? key,
     required this.text,
     required this.value,

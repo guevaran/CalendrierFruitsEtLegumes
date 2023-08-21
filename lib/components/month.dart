@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 
 class Month extends StatefulWidget {
   final dynamic month;
-  int? selected;
-  dynamic fruit;
-  Function()? onTap;
-  late bool _isSelected;
+  final int? selected;
+  final dynamic fruit;
+  final Function()? onTap;
+  // late bool _isSelected;
+  final double horizontalPadding;
+  final double verticalPadding;
 
-  Month({super.key, required this.month, this.selected, this.fruit, this.onTap}) {
-    _isSelected = (selected == int.parse(month['id']));
+  Month({super.key, required this.month, this.selected, this.fruit, this.onTap, this.horizontalPadding = 15, this.verticalPadding = 20}) {
+    // _isSelected = (selected == int.parse(month['id']));
   }
 
   @override
@@ -16,6 +18,8 @@ class Month extends StatefulWidget {
 }
 
 class _MonthState extends State<Month> {
+  bool _isSelected() => (widget.selected == int.parse(widget.month['id']));
+
   Color _bgColor(BuildContext context) {
     Color color = Theme.of(context).colorScheme.background;
     if (widget.fruit != null && widget.fruit["months"] != null) {
@@ -25,7 +29,7 @@ class _MonthState extends State<Month> {
           break;
         }
       }
-    } else if (widget._isSelected) {
+    } else if (_isSelected()) {
       color = Theme.of(context).colorScheme.primary;
     }
     return color;
@@ -40,7 +44,7 @@ class _MonthState extends State<Month> {
           break;
         }
       }
-    } else if (widget._isSelected) {
+    } else if (_isSelected()) {
       color = Theme.of(context).colorScheme.onPrimary;
     }
     return color;
@@ -64,7 +68,7 @@ class _MonthState extends State<Month> {
     return GestureDetector(
       onTap: widget.onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: widget.horizontalPadding, vertical: widget.verticalPadding),
         decoration: BoxDecoration(
           color: _bgColor(context),
           border: _border(),

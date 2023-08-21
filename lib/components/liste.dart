@@ -1,8 +1,6 @@
 import 'package:calendrier_fruits_et_legumes/components/fruit_list_tile.dart';
 import 'package:calendrier_fruits_et_legumes/utils.dart';
 import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'package:flutter/services.dart';
 import 'package:linked_scroll_controller/linked_scroll_controller.dart';
 
 class Liste extends StatefulWidget {
@@ -134,7 +132,7 @@ class _ListeState extends State<Liste> {
         ),
         Container(
           // height: 100,
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           width: double.infinity,
           decoration: BoxDecoration(
             boxShadow: <BoxShadow>[BoxShadow(color: Theme.of(context).colorScheme.secondary, blurRadius: 4.0, offset: const Offset(0.0, -0.60))],
