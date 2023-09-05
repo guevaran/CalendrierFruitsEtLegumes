@@ -20,6 +20,8 @@ class _ListeState extends State<Liste> {
   late Future<Map<String, dynamic>> _fruitsById;
   List<dynamic>? _filteredFruits;
   final LinkedScrollControllerGroup _monthsScrollControllers = LinkedScrollControllerGroup();
+  final _searchController = TextEditingController();
+  FocusNode _searchFocus = FocusNode();
 
   @override
   void setState(fn) {
@@ -52,7 +54,6 @@ class _ListeState extends State<Liste> {
       _filterFruits();
       setState(() => _filteredFruits);
     });
-
   }
 
   void _filterFruits([String? searchValue]) {
@@ -152,10 +153,24 @@ class _ListeState extends State<Liste> {
               ),
               Expanded(
                 child: TextField(
+                  controller: _searchController,
+                  focusNode: _searchFocus,
                   onChanged: (value) {
                     _filterFruits(value);
                     setState(() => _filteredFruits);
                   },
+                  decoration: InputDecoration(
+                    hintText: 'Tapez un nom...',
+                    suffixIcon: IconButton(
+                      onPressed: () {
+                        _searchController.clear();
+                        _filterFruits();
+                        setState(() => _filteredFruits);
+                        _searchFocus.unfocus();
+                      },
+                      icon: const Icon(Icons.clear),
+                    ),
+                  ),
                 ),
               ),
             ],

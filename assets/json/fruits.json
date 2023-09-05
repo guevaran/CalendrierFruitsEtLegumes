@@ -904,6 +904,7 @@
     "id": "117",
     "label": "Chou romanesco",
     "type": "legume",
+    "img_path": "romanesco.png",
     "months": [
       "6"
     ],
@@ -937,6 +938,7 @@
     "id": "83",
     "label": "Cardon",
     "type": "legume",
+    "img_path": "cardon.png",
     "months": [
       "11"
     ],
@@ -946,12 +948,13 @@
     "id": "85",
     "label": "Crosne",
     "type": "legume",
+    "img_path": "crosne.png",
     "months": [
       "3",
       "11",
       "12"
     ],
-    "description": "Le crosne, également appelé chayote, est un petit tubercule avec une texture croquante et une saveur légèrement sucrée. Il peut être cuit, frit ou utilisé dans les sautés."
+    "description": "Le crosne, est un petit tubercule avec une texture croquante et une saveur légèrement sucrée. Il peut être cuit, frit ou utilisé dans les sautés."
   },
   "92": {
     "id": "92",

@@ -71,11 +71,12 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           PopupMenuButton(
+            color: Theme.of(context).colorScheme.background,
             itemBuilder: (context) => [
               const PopupMenuItem(
                 value: 'donate',
                 child: SizedBox(
-                  width: 140,
+                  width: 160,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [

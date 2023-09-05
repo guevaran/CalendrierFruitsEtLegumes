@@ -24,69 +24,71 @@ class _FruitDetailPageState extends State<FruitDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.fruit['label'])),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(15),
-            child: Center(
-              child: Hero(
-                tag: (widget.fruit['img_path'] != null) ? widget.fruit['img_path'] : 'f${widget.fruit['id']}',
-                child: Image(
-                  image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/default_fruit.png'),
-                  height: 300,
-                  alignment: Alignment.center,
-                  fit: BoxFit.contain,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Center(
+                child: Hero(
+                  tag: (widget.fruit['img_path'] != null) ? widget.fruit['img_path'] : 'f${widget.fruit['id']}',
+                  child: Image(
+                    image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/default_fruit.png'),
+                    height: 300,
+                    alignment: Alignment.center,
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(height: 10),
-          const Text(
-            'Description :',
-            style: TextStyle(
-              decoration: TextDecoration.underline,
-              fontWeight: FontWeight.bold,
+            const SizedBox(height: 10),
+            const Text(
+              'Description :',
+              style: TextStyle(
+                decoration: TextDecoration.underline,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-            child: Text(widget.fruit['description']),
-          ),
-          const SizedBox(height: 10),
-          const Text(
-            'Saison :',
-            style: TextStyle(
-              decoration: TextDecoration.underline,
-              fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+              child: Text(widget.fruit['description']),
             ),
-          ),
-          Container(
-            height: 80,
-            padding: const EdgeInsets.symmetric(horizontal: 40),
-            child: FutureBuilder(
-              future: _months,
-              builder: (context, smonths) {
-                if (smonths.connectionState == ConnectionState.waiting) {
-                  return const Center(child: CircularProgressIndicator());
-                } else if (smonths.hasError) {
-                  debugPrint(smonths.error.toString());
-                  return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
-                } else if (smonths.hasData) {
-                  return SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        for (dynamic month in smonths.data!.values) Month(month: month, fruit: widget.fruit, horizontalPadding: 5),
-                      ],
-                    ),
-                  );
-                } else {
-                  return const Center(child: CircularProgressIndicator());
-                }
-              },
+            const SizedBox(height: 10),
+            const Text(
+              'Saison :',
+              style: TextStyle(
+                decoration: TextDecoration.underline,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-        ],
+            Container(
+              height: 80,
+              padding: const EdgeInsets.symmetric(horizontal: 40),
+              child: FutureBuilder(
+                future: _months,
+                builder: (context, smonths) {
+                  if (smonths.connectionState == ConnectionState.waiting) {
+                    return const Center(child: CircularProgressIndicator());
+                  } else if (smonths.hasError) {
+                    debugPrint(smonths.error.toString());
+                    return Center(child: Text('An error has occured', style: TextStyle(color: Theme.of(context).colorScheme.error)));
+                  } else if (smonths.hasData) {
+                    return SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          for (dynamic month in smonths.data!.values) Month(month: month, fruit: widget.fruit, horizontalPadding: 5),
+                        ],
+                      ),
+                    );
+                  } else {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
