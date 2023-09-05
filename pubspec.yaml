@@ -10,13 +10,13 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # hive: ^2.2.3
-  # flutter_scatter: ^0.2.0
   scrollable_positioned_list: ^0.3.8
   linked_scroll_controller: ^0.2.0
   url_launcher: ^6.1.12
   simple_icons: ^7.10.0
   flutter_launcher_icons: ^0.13.1
+  google_fonts: ^5.1.0
+  shared_preferences: ^2.2.1
 
 flutter_launcher_icons:
   image_path: "assets/logo/logo_square_bg.png"
@@ -35,3 +35,5 @@ flutter:
   assets:
     - assets/json/
     - assets/imgs/
+    - assets/logo/
+    - assets/google_fonts/
