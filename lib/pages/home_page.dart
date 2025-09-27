@@ -3,6 +3,7 @@ import 'package:calendrier_fruits_et_legumes/components/liste.dart';
 import 'package:calendrier_fruits_et_legumes/components/calendrier.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class HomePage extends StatefulWidget {
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Image.asset(
-                          'assets/logo/logo.png',
+                          'assets/logo/logo.webp',
                           height: 150,
                         ),
                       ),
@@ -170,7 +171,7 @@ class _HomePageState extends State<HomePage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Image(image: AssetImage("assets/imgs/kofi.png"), height: 25),
+                            Image(image: AssetImage("assets/imgs/kofi.webp"), height: 25),
                             SizedBox(width: 10),
                             Text("Faire un don", style: TextStyle(fontWeight: FontWeight.bold)),
                           ],
@@ -183,7 +184,14 @@ class _HomePageState extends State<HomePage> {
                       case 'donate':
                         () async {
                           try {
-                            await launchUrlString("https://ko-fi.com/nicolasguevara");
+                            final ok = await launchUrlString(
+                              "https://ko-fi.com/nicolasguevara",
+                              mode: LaunchMode.externalApplication,
+                              webOnlyWindowName: '_blank',
+                            );
+                            if (!ok && context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Impossible d\’ouvrir Ko‑fi')));
+                            }
                           } catch (e) {
                             debugPrint("Error: $e");
                           }

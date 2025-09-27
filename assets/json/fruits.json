@@ -1,1297 +1,798 @@
 {
-  "37": {
-    "id": "37",
-    "label": "Fraise",
-    "type": "fruit",
-    "img_path": "fraise.png",
-    "months": [
-      "5",
-      "6",
-      "7",
-      "8"
-    ],
-    "description": "Savoureuse et sucrée, la fraise est un fruit emblématique de l'été. Elle se déguste nature, en dessert ou dans diverses préparations gourmandes."
-  },
-  "38": {
-    "id": "38",
-    "label": "Framboise",
-    "type": "fruit",
-    "img_path": "framboise.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "10"
-    ],
-    "description": "La framboise, petite baie délicieusement parfumée, est un régal pour les papilles. Elle s'apprécie autant fraîche que dans des desserts et des confitures."
-  },
-  "44": {
-    "id": "44",
-    "label": "Raisin",
-    "type": "fruit",
-    "img_path": "raisin.png",
-    "months": [
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "Symbole de la viticulture, le raisin offre une variété de saveurs et de couleurs. Il est délicieux en en-cas ou transformé en vin, jus et confitures."
-  },
-  "114": {
-    "id": "114",
-    "label": "Cerise",
-    "type": "fruit",
-    "img_path": "cerises.png",
-    "months": [
-      "5",
-      "6",
-      "7"
-    ],
-    "description": "La cerise, fruit juteux et gourmand, annonce l'arrivée de l'été. Elle se déguste nature, en clafoutis, en confiture et dans de nombreuses autres recettes."
-  },
-  "47": {
-    "id": "47",
-    "label": "Nectarine",
-    "type": "fruit",
-    "img_path": "nectarine.png",
-    "months": [
-      "7",
-      "8"
-    ],
-    "description": "La nectarine, douce et juteuse, est une variété de pêche à la chair lisse. Elle est idéale pour les collations estivales et les salades de fruits."
-  },
-  "28": {
-    "id": "28",
-    "label": "Orange",
-    "type": "fruit",
-    "img_path": "orange.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "11",
-      "12"
-    ],
-    "description": "L'orange est un agrume vitaminé qui apporte de la fraîcheur en hiver. Juteuse et parfumée, elle est appréciée en jus, en quartiers ou en dessert."
-  },
-  "25": {
-    "id": "25",
-    "label": "Clémentine",
-    "type": "fruit",
-    "img_path": "clementine.png",
-    "months": [
-      "1",
-      "2",
-      "11",
-      "12"
-    ],
-    "description": "La clémentine, petite sœur de l'orange, est facile à éplucher et délicieusement sucrée. Elle est idéale pour les encas et les desserts légers."
-  },
-  "32": {
-    "id": "32",
-    "label": "Pomme",
-    "type": "fruit",
-    "img_path": "pomme.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "6",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La pomme, fruit emblématique, est appréciée pour sa croquante douceur et sa variété de saveurs. Elle est disponible presque toute l'année et offre une grande diversité de couleurs et de goûts."
-  },
-  "12": {
-    "id": "12",
-    "label": "Pomme de terre",
-    "type": "legume",
-    "img_path": "potato.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La pomme de terre est un légume polyvalent et fondamental dans de nombreuses cuisines à travers le monde. Elle peut être préparée de différentes manières, offrant une source importante d'amidon."
-  },
-  "31": {
-    "id": "31",
-    "label": "Poire",
-    "type": "fruit",
-    "img_path": "poire.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La poire, juteuse et sucrée, est appréciée pour sa texture agréable en bouche. Disponible en plusieurs variétés, elle peut être dégustée fraîche ou utilisée dans diverses préparations culinaires."
-  },
-  "40": {
-    "id": "40",
-    "label": "Melon",
-    "type": "fruit",
-    "img_path": "melon.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    "description": "Le melon, fruit rafraîchissant et sucré, est un incontournable de l'été. Sa chair juteuse et parfumée en fait une option populaire pour les desserts et les collations estivales."
-  },
-  "41": {
-    "id": "41",
-    "label": "Pastèque",
-    "type": "fruit",
-    "img_path": "pasteque.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    "description": "La pastèque, avec sa chair juteuse et sucrée, est idéale pour étancher la soif pendant les mois chauds. Elle est souvent consommée en tranches fraîches, mais peut aussi être utilisée dans des boissons et des salades."
-  },
-  "42": {
-    "id": "42",
-    "label": "Pêche",
-    "type": "fruit",
-    "img_path": "peche.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    "description": "La pêche, fruit doux et parfumé, est appréciée pour sa chair délicate et son goût sucré. Elle peut être consommée fraîche, utilisée dans des pâtisseries ou transformée en confitures et conserves."
-  },
-  "116": {
-    "id": "116",
-    "label": "Tomate",
-    "type": "legume",
-    "img_path": "tomate.png",
-    "months": [
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La tomate est un légume-fruits polyvalent largement utilisé en cuisine. Disponible dans une variété de formes et de couleurs, elle est utilisée dans une multitude de plats, des salades aux sauces."
-  },
-  "64": {
-    "id": "64",
-    "label": "Haricot vert",
-    "type": "legume",
-    "img_path": "haricot_vert.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "Les haricots verts, riches en fibres et en nutriments, sont des légumes tendres et délicieux. Ils peuvent être cuits à la vapeur, sautés ou ajoutés à des plats pour ajouter une touche de couleur et de saveur."
-  },
-  "65": {
-    "id": "65",
-    "label": "Laitue",
-    "type": "legume",
-    "img_path": "laitue.png",
-    "months": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La laitue, ingrédient de base des salades, offre une texture croquante et rafraîchissante. Elle est appréciée pour sa capacité à servir de base à de nombreuses combinaisons de légumes et de vinaigrettes."
-  },
-  "2": {
-    "id": "2",
-    "label": "Carotte",
-    "type": "legume",
-    "img_path": "carotte.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La carotte, légume croquant et coloré, est riche en bêta-carotène et en nutriments essentiels. Elle peut être consommée crue en collation ou cuite dans une variété de plats."
-  },
-  "60": {
-    "id": "60",
-    "label": "Concombre",
-    "type": "legume",
-    "img_path": "concombre.png",
-    "months": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "9",
-      "10"
-    ],
-    "description": "Le concombre, légume rafraîchissant, est souvent consommé frais en salade. Sa texture croquante et son goût léger en font un ingrédient populaire pour les plats estivaux."
-  },
-  "61": {
-    "id": "61",
-    "label": "Courgette",
-    "type": "legume",
-    "img_path": "courgette.png",
-    "months": [
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La courgette, légume du soleil, est présente dans les assiettes tout l’été. Facile à préparer, elle se consomme sous toutes ses formes et sa richesse en vitamines vous donne de l’énergie à la belle saison."
-  },
-  "21": {
-    "id": "21",
-    "label": "Oignon",
-    "type": "legume",
-    "img_path": "oignon.png",
-    "months": [
-      "4",
-      "5"
-    ],
-    "description": "L'oignon est un ingrédient de base en cuisine, ajoutant de la saveur et de la profondeur aux plats. Il peut être utilisé cru ou cuit dans une variété de recettes."
-  },
-  "62": {
-    "id": "62",
-    "label": "Échalote",
-    "type": "legume",
-    "img_path": "echalotte.png",
-    "months": [
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "L'échalote, semblable à l'oignon mais avec une saveur plus subtile, est souvent utilisée pour ajouter de la complexité aux plats. Sa douceur et son arôme font d'elle un ingrédient apprécié en cuisine."
-  },
-  "19": {
-    "id": "19",
-    "label": "Épinard",
-    "type": "legume",
-    "img_path": "epinard.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Les épinards, riches en fer et en vitamines, sont des légumes à feuilles verts foncés. Ils sont polyvalents en cuisine, que ce soit en salades, en accompagnements ou en plats principaux."
-  },
-  "22": {
-    "id": "22",
-    "label": "Poireau",
-    "type": "legume",
-    "img_path": "poireau.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le poireau, membre de la famille de l'oignon, a une saveur délicate. Il peut être utilisé dans une variété de plats, des soupes aux quiches, et ajoute une touche d'arôme aux préparations."
-  },
-  "113": {
-    "id": "113",
-    "label": "Petit pois",
-    "type": "legume",
-    "img_path": "petit_pois.png",
-    "months": [
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "description": "Les petits pois, doux et tendres, sont souvent utilisés comme accompagnement ou ajoutés à des plats pour ajouter de la couleur et de la saveur. Ils peuvent également être consommés frais en collation."
-  },
-  "115": {
-    "id": "115",
-    "label": "Rhubarbe",
-    "type": "fruit",
-    "img_path": "rhubarb.png",
-    "months": [
-      "5",
-      "6",
-      "7"
-    ],
-    "description": "La rhubarbe, fruit au goût acidulé, est principalement utilisée dans des desserts sucrés comme les tartes et les compotes. Sa saveur unique apporte une touche de fraîcheur aux préparations."
-  },
-  "4": {
-    "id": "4",
-    "label": "Chou blanc",
-    "type": "legume",
-    "img_path": "chou_blanc.png",
-    "months": [
-      "1",
-      "2",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le chou blanc, croquant et polyvalent, est utilisé dans une variété de plats, des salades aux plats mijotés. Sa texture et sa saveur en font un légume apprécié en cuisine."
-  },
-  "5": {
-    "id": "5",
-    "label": "Chou frisé",
-    "type": "legume",
-    "img_path": "chou_frise.png",
-    "months": [
-      "1",
-      "2",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le chou frisé, également appelé kale, est un légume-feuille nutritif et riche en antioxydants. Il peut être utilisé cru dans les salades ou cuit dans une variété de plats."
-  },
-  "6": {
-    "id": "6",
-    "label": "Courge",
-    "type": "legume",
-    "img_path": "courge.png",
-    "months": [
-      "1",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La courge, avec sa chair douce et sucrée, est un légume d'automne apprécié. Elle peut être utilisée dans des soupes, des purées et des plats rôtis, ajoutant une saveur chaleureuse aux repas."
-  },
-  "7": {
-    "id": "7",
-    "label": "Endive",
-    "type": "legume",
-    "img_path": "endive.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "L'endive, également connue sous le nom de chicon, est un légume croquant et légèrement amer. Elle est souvent utilisée dans les salades ou cuite pour adoucir sa saveur caractéristique."
-  },
-  "3": {
-    "id": "3",
-    "label": "Céleri-rave",
-    "type": "legume",
-    "img_path": "celeri_boule.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le céleri-rave, également appelé céleri-boule, est un légume racine au goût doux et légèrement relevé. Il peut être consommé cru en salades ou cuit dans une variété de plats."
-  },
-  "8": {
-    "id": "8",
-    "label": "Frisée",
-    "type": "legume",
-    "img_path": "frisee.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La frisée, variété de laitue à feuilles frisées, ajoute de la texture et une légère amertume aux salades. Sa saveur unique en fait un ingrédient apprécié dans les préparations culinaires."
-  },
-  "13": {
-    "id": "13",
-    "label": "Betterave",
-    "type": "legume",
-    "img_path": "betterave.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La betterave, douce et terreuse, est souvent utilisée cuite ou crue dans les salades. Sa couleur vive ajoute une touche visuelle attrayante aux plats."
-  },
-  "14": {
-    "id": "14",
-    "label": "Céleri-branche",
-    "type": "legume",
-    "img_path": "celeri.png",
-    "months": [
-      "1",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le céleri-branche, croquant et aromatique, est souvent utilisé comme ingrédient dans les soupes, les salades et les plats mijotés. Il ajoute de la saveur et de la texture aux préparations."
-  },
-  "15": {
-    "id": "15",
-    "label": "Chou",
-    "type": "legume",
-    "img_path": "chou.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le chou, avec ses nombreuses variétés comme le chou vert, rouge et nappa, est un légume polyvalent en cuisine. Il peut être utilisé cru ou cuit dans une variété de plats."
-  },
-  "16": {
-    "id": "16",
-    "label": "Chou de Bruxelles",
-    "type": "legume",
-    "img_path": "chou_bruxelle.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le chou de Bruxelles, en mini-cabochons, est souvent cuit ou rôti pour adoucir sa saveur. Il ajoute une touche de goût et de couleur aux plats d'hiver."
-  },
-  "17": {
-    "id": "17",
-    "label": "Chou rouge",
-    "type": "legume",
-    "img_path": "chou_rouge.png",
-    "months": [
-      "1",
-      "2",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le chou rouge, avec sa couleur vibrante, est utilisé dans une variété de plats. Il peut être consommé cru en salades ou cuit pour accompagner différents mets."
-  },
-  "26": {
-    "id": "26",
-    "label": "Kiwi",
-    "type": "fruit",
-    "img_path": "kiwi.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "11",
-      "12"
-    ],
-    "description": "Le kiwi, fruit acidulé et riche en vitamine C, peut être dégusté frais ou ajouté à des smoothies et des desserts. Sa chair verte et juteuse est appréciée pour son goût unique."
-  },
-  "27": {
-    "id": "27",
-    "label": "Mandarine",
-    "type": "fruit",
-    "img_path": "mandarine.png",
-    "months": [
-      "1",
-      "2",
-      "11",
-      "12"
-    ],
-    "description": "La mandarine, fruit sucré et facile à peler, est une collation pratique et savoureuse. Elle peut également être utilisée dans les préparations culinaires pour ajouter une touche d'arôme."
-  },
-  "29": {
-    "id": "29",
-    "label": "Pamplemousse",
-    "type": "fruit",
-    "img_path": "pamplemousse.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "description": "Le pamplemousse, avec son goût sucré-acide et rafraîchissant, est souvent consommé en quartiers ou ajouté aux salades. Il est également utilisé pour son jus dans les boissons."
-  },
-  "20": {
-    "id": "20",
-    "label": "Mâche",
-    "type": "legume",
-    "img_path": "mache.png",
-    "months": [
-      "1",
-      "2",
-      "11",
-      "12"
-    ],
-    "description": "La mâche, également appelée doucette, est une laitue à feuilles tendres et délicates. Elle est souvent utilisée comme base pour les salades et ajoute de la douceur aux plats."
-  },
-  "33": {
-    "id": "33",
-    "label": "Citron",
-    "type": "fruit",
-    "img_path": "citron.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "6",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le citron, fruit acide aux multiples usages, est utilisé pour son jus, son zeste et sa saveur distinctive. Il ajoute une touche d'acidité à de nombreux plats sucrés et salés."
-  },
-  "35": {
-    "id": "35",
-    "label": "Abricot",
-    "type": "fruit",
-    "img_path": "abricot.png",
-    "months": [
-      "6",
-      "7",
-      "8"
-    ],
-    "description": "L'abricot, fruit doux et juteux, est souvent consommé frais en été. Il peut également être utilisé dans les confitures, les pâtisseries et les desserts."
-  },
-  "36": {
-    "id": "36",
-    "label": "Cassis",
-    "type": "fruit",
-    "img_path": "cassis.png",
-    "months": [
-      "6",
-      "7",
-      "8"
-    ],
-    "description": "Le cassis, petit fruit foncé et aromatique, est souvent utilisé dans les confitures, les pâtisseries et les boissons. Sa saveur acidulée en fait un ingrédient apprécié."
-  },
-  "39": {
-    "id": "39",
-    "label": "Groseille",
-    "type": "fruit",
-    "img_path": "groseille.png",
-    "months": [
-      "6",
-      "7",
-      "8"
-    ],
-    "description": "La groseille, fruit rouge ou blanc, est appréciée pour sa saveur acidulée. Elle peut être utilisée dans les desserts, les sauces et les boissons pour ajouter de la fraîcheur."
-  },
-  "53": {
-    "id": "53",
-    "label": "Mirabelle",
-    "img_path": "mirabelle.png",
-    "type": "fruit",
-    "months": [
-      "8",
-      "9"
-    ],
-    "description": "La mirabelle, petite prune jaune, est souvent consommée fraîche ou transformée en confitures et en liqueurs. Sa chair sucrée en fait un fruit apprécié en été."
-  },
-  "43": {
-    "id": "43",
-    "label": "Prune",
-    "type": "fruit",
-    "img_path": "prune.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    "description": "La prune, fruit sucré et juteux, est souvent consommée fraîche en été. Elle peut également être utilisée dans les pâtisseries, les confitures et les compotes."
-  },
-  "45": {
-    "id": "45",
-    "label": "Figue",
-    "type": "fruit",
-    "img_path": "figue.png",
-    "months": [
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La figue, fruit sucré et charnu, est souvent dégustée fraîche ou séchée. Elle ajoute une note sucrée aux salades, aux plats de fromage et aux desserts."
-  },
-  "46": {
-    "id": "46",
-    "label": "Myrtille",
-    "type": "fruit",
-    "img_path": "myrtille.png",
-    "months": [
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La myrtille, petit fruit bleu foncé, est riche en antioxydants. Elle est souvent utilisée dans les desserts, les smoothies et les sauces pour ajouter une saveur délicieuse et saine."
-  },
-  "54": {
-    "id": "54",
-    "label": "Mûre",
-    "type": "fruit",
-    "img_path": "mures.png",
-    "months": [
-      "8",
-      "9"
-    ],
-    "description": "La mûre, fruit noir et sucré, est souvent consommée fraîche ou transformée en confitures, en pâtisseries et en boissons. Sa saveur riche en fait un ingrédient apprécié en été."
-  },
-  "24": {
-    "id": "24",
-    "label": "Amande",
-    "type": "fruit",
-    "img_path": "amande.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "L'amande, fruit sec à coque, est souvent consommée nature ou ajoutée à diverses préparations culinaires. Elle est appréciée pour sa saveur délicate et ses bienfaits nutritifs."
-  },
-  "48": {
-    "id": "48",
-    "label": "Noisette",
-    "type": "fruit",
-    "img_path": "noisette.png",
-    "months": [
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La noisette, fruit sec à coque, est souvent consommée nature ou utilisée dans les pâtisseries et les confiseries. Sa saveur légèrement sucrée en fait une collation appréciée."
-  },
-  "49": {
-    "id": "49",
-    "label": "Noix",
-    "type": "fruit",
-    "img_path": "noix.png",
-    "months": [
-      "9",
-      "10"
-    ],
-    "description": "La noix, fruit sec à coque, est riche en nutriments et en oméga-3. Elle est souvent consommée nature, ajoutée aux plats ou utilisée dans les desserts et les collations."
-  },
-  "52": {
-    "id": "52",
-    "label": "Châtaigne",
-    "type": "fruit",
-    "img_path": "chataigne.png",
-    "months": [
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "La châtaigne, fruit à coque doux et farineux, est souvent cuite pour révéler sa saveur sucrée. Elle est utilisée dans les plats salés et sucrés en automne et en hiver."
-  },
-  "55": {
-    "id": "55",
-    "label": "Artichaut",
-    "type": "legume",
-    "img_path": "artichaud.png",
-    "months": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    "description": "L'artichaut est un légume à la saveur délicate et légèrement amère. Ses feuilles charnues peuvent être consommées après avoir été cuites et trempées dans une sauce. Le cœur de l'artichaut est particulièrement apprécié pour sa tendreté."
-  },
-  "56": {
-    "id": "56",
-    "label": "Asperge",
-    "type": "legume",
-    "img_path": "asperge.png",
-    "months": [
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "description": "L'asperge est un légume tendre et délicat, souvent cuit à la vapeur, grillé ou bouilli. Sa saveur douce en fait un ingrédient polyvalent dans une variété de plats."
-  },
-  "57": {
-    "id": "57",
-    "label": "Blette",
-    "type": "legume",
-    "img_path": "blette.png",
-    "months": [
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La blette, également appelée bette, est un légume à feuilles vertes et tiges charnues. Ses feuilles et ses côtes sont utilisées dans les préparations culinaires pour leur saveur et leur texture uniques."
-  },
-  "58": {
-    "id": "58",
-    "label": "Brocoli",
-    "type": "legume",
-    "img_path": "brocoli.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11"
-    ],
-    "description": "Le brocoli, riche en nutriments, est souvent consommé cuit à la vapeur, sauté ou ajouté aux plats. Ses têtes florales et ses tiges croquantes sont appréciées pour leur saveur et leur apport nutritif."
-  },
-  "59": {
-    "id": "59",
-    "label": "Chou-fleur",
-    "type": "legume",
-    "img_path": "chou_fleur.png",
-    "months": [
-      "4",
-      "5"
-    ],
-    "description": "Le chou-fleur est un légume à la texture délicate qui peut être cuit, grillé ou utilisé pour préparer des purées. Il est souvent utilisé comme alternative aux amidons dans les recettes."
-  },
-  "63": {
-    "id": "63",
-    "label": "Fenouil",
-    "type": "legume",
-    "img_path": "fenouil.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11"
-    ],
-    "description": "Le fenouil a une saveur anisée et une texture croquante. Il peut être consommé cru en salades, cuit dans des plats ou utilisé pour aromatiser les sauces."
-  },
-  "66": {
-    "id": "66",
-    "label": "Patate douce",
-    "type": "legume",
-    "img_path": "patate_douce.png",
-    "months": [
-      "9",
-      "10"
-    ],
-    "description": "La patate douce, sucrée et nutritive, peut être cuite, rôtie, bouillie ou transformée en purée. Sa chair colorée est appréciée pour son goût unique et sa polyvalence en cuisine."
-  },
-  "67": {
-    "id": "67",
-    "label": "Poivron",
-    "type": "legume",
-    "img_path": "poivron.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    "description": "Le poivron, avec ses différentes couleurs et saveurs, est souvent utilisé pour ajouter de la couleur et de la saveur aux plats. Il peut être consommé cru, grillé, rôti ou farci."
-  },
-  "70": {
-    "id": "70",
-    "label": "Aubergine",
-    "type": "legume",
-    "img_path": "aubergine.png",
-    "months": [
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "L'aubergine, avec sa texture tendre et sa saveur douce, est souvent utilisée dans les plats méditerranéens et asiatiques. Elle peut être grillée, rôtie, cuite au four ou sautée."
-  },
-  "68": {
-    "id": "68",
-    "label": "Potiron",
-    "type": "legume",
-    "img_path": "potiron.png",
-    "months": [
-      "9"
-    ],
-    "description": "Le potiron, variété de courge, est souvent utilisé pour préparer des soupes, des purées et des plats d'automne. Sa chair sucrée et orangée est appréciée pour sa saveur caractéristique."
-  },
-  "117": {
-    "id": "117",
-    "label": "Chou romanesco",
-    "type": "legume",
-    "img_path": "romanesco.png",
-    "months": [
-      "6"
-    ],
-    "description": "Le chou romanesco, avec sa forme géométrique unique, est un légume à la texture croquante. Il peut être cuit à la vapeur, rôti ou utilisé dans les salades."
-  },
-  "118": {
-    "id": "118",
-    "label": "Brugnon",
-    "type": "fruit",
-    "img_path": "brugnon.png",
-    "months": [
-      "6",
-      "7",
-      "8"
-    ],
-    "description": "Le brugnon est un fruit juteux et sucré, souvent consommé frais en été. Il peut également être utilisé dans les salades de fruits, les pâtisseries et les confitures."
-  },
-  "119": {
-    "id": "119",
-    "label": "Coing",
-    "type": "fruit",
-    "img_path": "coing.png",
-    "months": [
-      "9",
-      "10",
-      "11"
-    ],
-    "description": "Le coing, fruit à la saveur unique, est souvent utilisé pour préparer des confitures, des gelées et des pâtes de fruits. Sa chair parfumée nécessite une cuisson pour être consommée."
-  },
-  "83": {
-    "id": "83",
-    "label": "Cardon",
-    "type": "legume",
-    "img_path": "cardon.png",
-    "months": [
-      "11"
-    ],
-    "description": "Le cardon est un légume apparenté à l'artichaut, apprécié pour ses tiges charnues et sa saveur légèrement amère. Il est souvent cuit et utilisé dans les plats d'automne."
-  },
-  "85": {
-    "id": "85",
-    "label": "Crosne",
-    "type": "legume",
-    "img_path": "crosne.png",
-    "months": [
-      "3",
-      "11",
-      "12"
-    ],
-    "description": "Le crosne, est un petit tubercule avec une texture croquante et une saveur légèrement sucrée. Il peut être cuit, frit ou utilisé dans les sautés."
-  },
-  "92": {
-    "id": "92",
-    "label": "Navet",
-    "type": "legume",
-    "img_path": "navet.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le navet, avec sa chair ferme et sa saveur douce, peut être consommé cru, cuit ou utilisé dans les ragoûts. Ses feuilles, appelées fanes, sont également comestibles."
-  },
-  "93": {
-    "id": "93",
-    "label": "Panais",
-    "type": "legume",
-    "img_path": "panais.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le panais est un légume racine sucré et aromatique, souvent rôti, cuit au four ou transformé en purée. Sa saveur rappelle celle de la carotte avec une touche d'anis."
-  },
-  "95": {
-    "id": "95",
-    "label": "Radis",
-    "type": "legume",
-    "img_path": "radis.png",
-    "months": [
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le radis est un légume racine croquant et piquant, souvent consommé cru en salades ou utilisé pour ajouter une touche de fraîcheur aux plats. Il existe différentes variétés de radis, chacune avec sa propre saveur distinctive."
-  },
-  "96": {
-    "id": "96",
-    "label": "Salsifi",
-    "type": "legume",
-    "img_path": "salsifi.png",
-    "months": [
-      "2",
-      "3",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le salsifi, également appelé scorsonère, est un légume racine avec une saveur subtile et délicate. Il peut être cuit, frit ou utilisé dans les soupes et les ragoûts."
-  },
-  "69": {
-    "id": "69",
-    "label": "Rutabaga",
-    "type": "legume",
-    "img_path": "rutabaga.png",
-    "months": [
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le rutabaga, une croisement entre le navet et le chou, est un légume racine sucré et légèrement piquant. Il peut être utilisé pour préparer des purées, des ragoûts et des plats d'automne."
-  },
-  "97": {
-    "id": "97",
-    "label": "Topinambour",
-    "type": "legume",
-    "img_path": "topinambour.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le topinambour, également appelé artichaut de Jérusalem, est un légume racine avec une saveur douce et légèrement sucrée. Il peut être cuit de différentes manières et est apprécié pour sa texture croquante."
-  },
-  "34": {
-    "id": "34",
-    "label": "Kaki",
-    "type": "fruit",
-    "img_path": "kaki.png",
-    "months": [
-      "1",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le kaki est un fruit doux et juteux, souvent consommé frais en automne. Il peut être mûr et mou, ou ferme et croquant, selon la variété."
-  },
-  "30": {
-    "id": "30",
-    "label": "Physalis",
-    "type": "fruit",
-    "img_path": "physalis.png",
-    "months": [
-      "1",
-      "2",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "Le physalis, également appelé amour en cage, est un petit fruit enveloppé dans une coque protectrice. Il a une saveur sucrée et acidulée, souvent utilisée dans les desserts et les salades."
-  },
-  "50": {
-    "id": "50",
-    "label": "Pruneau",
-    "type": "fruit",
-    "img_path": "pruneau.png",
-    "months": [
-      "8",
-      "9"
-    ],
-    "description": "Le pruneau, prune séchée, est souvent consommé comme en-cas ou utilisé pour sucrer les plats. Il est riche en fibres et en nutriments bénéfiques pour la digestion."
-  },
-  "51": {
-    "id": "51",
-    "label": "Baie de goji",
-    "type": "fruit",
-    "img_path": "baies_goji.png",
-    "months": [
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "La baie de goji est un petit fruit rouge séché, réputé pour ses bienfaits nutritionnels. Elle est souvent consommée seule ou ajoutée aux smoothies, aux céréales et aux salades."
-  },
-  "98": {
-    "id": "98",
-    "label": "Lentille",
-    "type": "cereale",
-    "img_path": "lentille.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "11",
-      "12"
-    ],
-    "description": "La lentille est une légumineuse riche en protéines et en fibres. Elle est souvent utilisée dans les plats végétariens et les soupes pour sa texture et sa saveur caractéristiques."
-  },
-  "99": {
-    "id": "99",
-    "label": "Avoine",
-    "type": "cereale",
-    "img_path": "avoine.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "12"
-    ],
-    "description": "L'avoine est une céréale populaire, souvent consommée sous forme de flocons pour le petit-déjeuner ou utilisée dans la cuisson. Elle est riche en fibres et en nutriments essentiels."
-  },
-  "100": {
-    "id": "100",
-    "label": "Orge",
-    "type": "cereale",
-    "img_path": "orge.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "8",
-      "12"
-    ],
-    "description": "L'orge est une céréale polyvalente, souvent utilisée dans les soupes, les salades et les plats d'accompagnement. Elle a une texture moelleuse et une saveur légèrement noisette."
-  },
-  "101": {
-    "id": "101",
-    "label": "Pois",
-    "type": "cereale",
-    "img_path": "pois.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "12"
-    ],
-    "description": "Le pois, une légumineuse, est souvent utilisé dans les plats salés et les salades. Il est riche en protéines végétales et en nutriments bénéfiques pour la santé."
-  },
-  "102": {
-    "id": "102",
-    "label": "Seigle",
-    "type": "cereale",
-    "img_path": "seigle.png",
-    "months": [
-      "6",
-      "7",
-      "8",
-      "12"
-    ],
-    "description": "Le seigle est une céréale utilisée pour fabriquer du pain, des céréales et des boissons alcoolisées. Il a une saveur robuste et est souvent associé à une alimentation saine."
-  },
-  "103": {
-    "id": "103",
-    "label": "Blé",
-    "type": "cereale",
-    "img_path": "ble.png",
-    "months": [
-      "7",
-      "8",
-      "12"
-    ],
-    "description": "Le blé est l'une des céréales les plus couramment cultivées et utilisées dans l'alimentation humaine. Il est transformé en farine pour faire du pain, des pâtisseries et d'autres produits."
-  },
-  "105": {
-    "id": "105",
-    "label": "Fève",
-    "type": "cereale",
-    "img_path": "feve.png",
-    "months": [
-      "7",
-      "8",
-      "12"
-    ],
-    "description": "La fève, également appelée féverole, est une légumineuse avec une saveur douce et une texture tendre. Elle est souvent utilisée dans les plats cuisinés et les soupes."
-  },
-  "106": {
-    "id": "106",
-    "label": "Haricot blanc",
-    "type": "cereale",
-    "img_path": "haricot_blanc.png",
-    "months": [
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "Le haricot blanc est une légumineuse polyvalente, souvent utilisée dans les plats salés et les soupes. Il est riche en protéines et en fibres, ce qui en fait un ingrédient nutritif."
-  },
-  "107": {
-    "id": "107",
-    "label": "Maïs",
-    "type": "cereale",
-    "img_path": "mais.png",
-    "months": [
-      "7",
-      "8",
-      "9",
-      "10",
-      "11"
-    ],
-    "description": "Le maïs est une céréale riche en amidon, souvent consommée cuite, grillée ou transformée en produits alimentaires variés. Il est également utilisé comme ingrédient dans de nombreux plats."
-  },
-  "108": {
-    "id": "108",
-    "label": "Quinoa",
-    "type": "cereale",
-    "img_path": "quinoa.png",
-    "months": [
-      "8",
-      "9",
-      "10"
-    ],
-    "description": "Le quinoa est une pseudo-céréale riche en protéines et en nutriments essentiels. Il est souvent utilisé comme alternative aux céréales traditionnelles et est apprécié pour sa texture légère et sa saveur subtile."
-  },
-  "109": {
-    "id": "109",
-    "label": "Riz",
-    "type": "cereale",
-    "img_path": "riz.png",
-    "months": [
-      "9",
-      "10"
-    ],
-    "description": "Le riz est l'une des céréales les plus consommées dans le monde. Il existe de nombreuses variétés, chacune avec sa propre texture et saveur. Il peut être utilisé dans une grande variété de plats."
-  },
-  "110": {
-    "id": "110",
-    "label": "Sarrasin",
-    "type": "cereale",
-    "img_path": "sarrasin.png",
-    "months": [
-      "9",
-      "10"
-    ],
-    "description": "Le sarrasin est une pseudo-céréale sans gluten, souvent utilisée pour préparer des crêpes, des galettes et des plats d'accompagnement. Il a une saveur distinctive et est riche en nutriments."
-  },
-  "111": {
-    "id": "111",
-    "label": "Soja",
-    "type": "cereale",
-    "img_path": "soja.png",
-    "months": [
-      "10"
-    ],
-    "description": "Le soja est une légumineuse riche en protéines végétales et en isoflavones. Il est transformé en divers produits tels que le tofu, le lait de soja et les produits à base de viande végétalienne."
-  },
-  "112": {
-    "id": "112",
-    "label": "Tournesol",
-    "type": "cereale",
-    "img_path": "tournesol.png",
-    "months": [
-      "9"
-    ],
-    "description": "Les graines de tournesol sont souvent consommées comme collation ou ajoutées aux salades, aux pains et aux produits de boulangerie. Elles sont riches en acides gras essentiels et en vitamines."
-  },
-  "1": {
-    "id": "1",
-    "label": "Ail",
-    "type": "legume",
-    "img_path": "ail.png",
-    "months": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "description": "L'ail est un légume aromatique couramment utilisé pour ajouter de la saveur aux plats. Il possède également des propriétés médicinales et est utilisé depuis longtemps pour ses bienfaits pour la santé."
-  }
+	"37": {
+		"id": "37",
+		"label": "Fraise",
+		"type": "fruit",
+		"img_path": "fraise.webp",
+		"months": ["5", "6", "7", "8"],
+		"description": "Savoureuse et sucrée, la fraise est un fruit emblématique de l'été. Elle se déguste nature, en dessert ou dans diverses préparations gourmandes."
+	},
+	"38": {
+		"id": "38",
+		"label": "Framboise",
+		"type": "fruit",
+		"img_path": "framboise.webp",
+		"months": ["6", "7", "8", "10"],
+		"description": "La framboise, petite baie délicieusement parfumée, est un régal pour les papilles. Elle s'apprécie autant fraîche que dans des desserts et des confitures."
+	},
+	"44": {
+		"id": "44",
+		"label": "Raisin",
+		"type": "fruit",
+		"img_path": "raisin.webp",
+		"months": ["8", "9", "10"],
+		"description": "Symbole de la viticulture, le raisin offre une variété de saveurs et de couleurs. Il est délicieux en en-cas ou transformé en vin, jus et confitures."
+	},
+	"114": {
+		"id": "114",
+		"label": "Cerise",
+		"type": "fruit",
+		"img_path": "cerises.webp",
+		"months": ["5", "6", "7"],
+		"description": "La cerise, fruit juteux et gourmand, annonce l'arrivée de l'été. Elle se déguste nature, en clafoutis, en confiture et dans de nombreuses autres recettes."
+	},
+	"47": {
+		"id": "47",
+		"label": "Nectarine",
+		"type": "fruit",
+		"img_path": "nectarine.webp",
+		"months": ["7", "8"],
+		"description": "La nectarine, douce et juteuse, est une variété de pêche à la chair lisse. Elle est idéale pour les collations estivales et les salades de fruits."
+	},
+	"28": {
+		"id": "28",
+		"label": "Orange",
+		"type": "fruit",
+		"img_path": "orange.webp",
+		"months": ["1", "2", "3", "11", "12"],
+		"description": "L'orange est un agrume vitaminé qui apporte de la fraîcheur en hiver. Juteuse et parfumée, elle est appréciée en jus, en quartiers ou en dessert."
+	},
+	"25": {
+		"id": "25",
+		"label": "Clémentine",
+		"type": "fruit",
+		"img_path": "clementine.webp",
+		"months": ["1", "2", "11", "12"],
+		"description": "La clémentine, petite sœur de l'orange, est facile à éplucher et délicieusement sucrée. Elle est idéale pour les encas et les desserts légers."
+	},
+	"32": {
+		"id": "32",
+		"label": "Pomme",
+		"type": "fruit",
+		"img_path": "pomme.webp",
+		"months": ["1", "2", "3", "4", "6", "8", "9", "10", "11", "12"],
+		"description": "La pomme, fruit emblématique, est appréciée pour sa croquante douceur et sa variété de saveurs. Elle est disponible presque toute l'année et offre une grande diversité de couleurs et de goûts."
+	},
+	"12": {
+		"id": "12",
+		"label": "Pomme de terre",
+		"type": "legume",
+		"img_path": "potato.webp",
+		"months": ["1", "2", "3", "9", "10", "11", "12"],
+		"description": "La pomme de terre est un légume polyvalent et fondamental dans de nombreuses cuisines à travers le monde. Elle peut être préparée de différentes manières, offrant une source importante d'amidon."
+	},
+	"31": {
+		"id": "31",
+		"label": "Poire",
+		"type": "fruit",
+		"img_path": "poire.webp",
+		"months": ["1", "2", "3", "4", "7", "8", "9", "10", "11", "12"],
+		"description": "La poire, juteuse et sucrée, est appréciée pour sa texture agréable en bouche. Disponible en plusieurs variétés, elle peut être dégustée fraîche ou utilisée dans diverses préparations culinaires."
+	},
+	"40": {
+		"id": "40",
+		"label": "Melon",
+		"type": "fruit",
+		"img_path": "melon.webp",
+		"months": ["6", "7", "8", "9"],
+		"description": "Le melon, fruit rafraîchissant et sucré, est un incontournable de l'été. Sa chair juteuse et parfumée en fait une option populaire pour les desserts et les collations estivales."
+	},
+	"41": {
+		"id": "41",
+		"label": "Pastèque",
+		"type": "fruit",
+		"img_path": "pasteque.webp",
+		"months": ["6", "7", "8", "9"],
+		"description": "La pastèque, avec sa chair juteuse et sucrée, est idéale pour étancher la soif pendant les mois chauds. Elle est souvent consommée en tranches fraîches, mais peut aussi être utilisée dans des boissons et des salades."
+	},
+	"42": {
+		"id": "42",
+		"label": "Pêche",
+		"type": "fruit",
+		"img_path": "peche.webp",
+		"months": ["6", "7", "8", "9"],
+		"description": "La pêche, fruit doux et parfumé, est appréciée pour sa chair délicate et son goût sucré. Elle peut être consommée fraîche, utilisée dans des pâtisseries ou transformée en confitures et conserves."
+	},
+	"116": {
+		"id": "116",
+		"label": "Tomate",
+		"type": "legume",
+		"img_path": "tomate.webp",
+		"months": ["5", "6", "7", "8", "9", "10"],
+		"description": "La tomate est un légume-fruits polyvalent largement utilisé en cuisine. Disponible dans une variété de formes et de couleurs, elle est utilisée dans une multitude de plats, des salades aux sauces."
+	},
+	"64": {
+		"id": "64",
+		"label": "Haricot vert",
+		"type": "legume",
+		"img_path": "haricot_vert.webp",
+		"months": ["6", "7", "8", "9", "10"],
+		"description": "Les haricots verts, riches en fibres et en nutriments, sont des légumes tendres et délicieux. Ils peuvent être cuits à la vapeur, sautés ou ajoutés à des plats pour ajouter une touche de couleur et de saveur."
+	},
+	"65": {
+		"id": "65",
+		"label": "Laitue",
+		"type": "legume",
+		"img_path": "laitue.webp",
+		"months": ["4", "5", "6", "7", "8", "9", "10"],
+		"description": "La laitue, ingrédient de base des salades, offre une texture croquante et rafraîchissante. Elle est appréciée pour sa capacité à servir de base à de nombreuses combinaisons de légumes et de vinaigrettes."
+	},
+	"2": {
+		"id": "2",
+		"label": "Carotte",
+		"type": "legume",
+		"img_path": "carotte.webp",
+		"months": [
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"10",
+			"11",
+			"12"
+		],
+		"description": "La carotte, légume croquant et coloré, est riche en bêta-carotène et en nutriments essentiels. Elle peut être consommée crue en collation ou cuite dans une variété de plats."
+	},
+	"60": {
+		"id": "60",
+		"label": "Concombre",
+		"type": "legume",
+		"img_path": "concombre.webp",
+		"months": ["4", "5", "6", "7", "9", "10"],
+		"description": "Le concombre, légume rafraîchissant, est souvent consommé frais en salade. Sa texture croquante et son goût léger en font un ingrédient populaire pour les plats estivaux."
+	},
+	"61": {
+		"id": "61",
+		"label": "Courgette",
+		"type": "legume",
+		"img_path": "courgette.webp",
+		"months": ["5", "6", "7", "8", "9", "10"],
+		"description": "La courgette, légume du soleil, est présente dans les assiettes tout l’été. Facile à préparer, elle se consomme sous toutes ses formes et sa richesse en vitamines vous donne de l’énergie à la belle saison."
+	},
+	"21": {
+		"id": "21",
+		"label": "Oignon",
+		"type": "legume",
+		"img_path": "oignon.webp",
+		"months": ["4", "5"],
+		"description": "L'oignon est un ingrédient de base en cuisine, ajoutant de la saveur et de la profondeur aux plats. Il peut être utilisé cru ou cuit dans une variété de recettes."
+	},
+	"62": {
+		"id": "62",
+		"label": "Échalote",
+		"type": "legume",
+		"img_path": "echalotte.webp",
+		"months": ["10", "11", "12"],
+		"description": "L'échalote, semblable à l'oignon mais avec une saveur plus subtile, est souvent utilisée pour ajouter de la complexité aux plats. Sa douceur et son arôme font d'elle un ingrédient apprécié en cuisine."
+	},
+	"19": {
+		"id": "19",
+		"label": "Épinard",
+		"type": "legume",
+		"img_path": "epinard.webp",
+		"months": [
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"10",
+			"11",
+			"12"
+		],
+		"description": "Les épinards, riches en fer et en vitamines, sont des légumes à feuilles verts foncés. Ils sont polyvalents en cuisine, que ce soit en salades, en accompagnements ou en plats principaux."
+	},
+	"22": {
+		"id": "22",
+		"label": "Poireau",
+		"type": "legume",
+		"img_path": "poireau.webp",
+		"months": ["1", "2", "3", "4", "9", "10", "11", "12"],
+		"description": "Le poireau, membre de la famille de l'oignon, a une saveur délicate. Il peut être utilisé dans une variété de plats, des soupes aux quiches, et ajoute une touche d'arôme aux préparations."
+	},
+	"113": {
+		"id": "113",
+		"label": "Petit pois",
+		"type": "legume",
+		"img_path": "petit_pois.webp",
+		"months": ["4", "5", "6", "7"],
+		"description": "Les petits pois, doux et tendres, sont souvent utilisés comme accompagnement ou ajoutés à des plats pour ajouter de la couleur et de la saveur. Ils peuvent également être consommés frais en collation."
+	},
+	"115": {
+		"id": "115",
+		"label": "Rhubarbe",
+		"type": "fruit",
+		"img_path": "rhubarb.webp",
+		"months": ["5", "6", "7"],
+		"description": "La rhubarbe, fruit au goût acidulé, est principalement utilisée dans des desserts sucrés comme les tartes et les compotes. Sa saveur unique apporte une touche de fraîcheur aux préparations."
+	},
+	"4": {
+		"id": "4",
+		"label": "Chou blanc",
+		"type": "legume",
+		"img_path": "chou_blanc.webp",
+		"months": ["1", "2", "8", "9", "10", "11", "12"],
+		"description": "Le chou blanc, croquant et polyvalent, est utilisé dans une variété de plats, des salades aux plats mijotés. Sa texture et sa saveur en font un légume apprécié en cuisine."
+	},
+	"5": {
+		"id": "5",
+		"label": "Chou frisé",
+		"type": "legume",
+		"img_path": "chou_frise.webp",
+		"months": ["1", "2", "9", "10", "11", "12"],
+		"description": "Le chou frisé, également appelé kale, est un légume-feuille nutritif et riche en antioxydants. Il peut être utilisé cru dans les salades ou cuit dans une variété de plats."
+	},
+	"6": {
+		"id": "6",
+		"label": "Courge",
+		"type": "legume",
+		"img_path": "courge.webp",
+		"months": ["1", "8", "9", "10", "11", "12"],
+		"description": "La courge, avec sa chair douce et sucrée, est un légume d'automne apprécié. Elle peut être utilisée dans des soupes, des purées et des plats rôtis, ajoutant une saveur chaleureuse aux repas."
+	},
+	"7": {
+		"id": "7",
+		"label": "Endive",
+		"type": "legume",
+		"img_path": "endive.webp",
+		"months": ["1", "2", "3", "4", "10", "11", "12"],
+		"description": "L'endive, également connue sous le nom de chicon, est un légume croquant et légèrement amer. Elle est souvent utilisée dans les salades ou cuite pour adoucir sa saveur caractéristique."
+	},
+	"3": {
+		"id": "3",
+		"label": "Céleri-rave",
+		"type": "legume",
+		"img_path": "celeri_boule.webp",
+		"months": ["1", "2", "3", "10", "11", "12"],
+		"description": "Le céleri-rave, également appelé céleri-boule, est un légume racine au goût doux et légèrement relevé. Il peut être consommé cru en salades ou cuit dans une variété de plats."
+	},
+	"8": {
+		"id": "8",
+		"label": "Frisée",
+		"type": "legume",
+		"img_path": "frisee.webp",
+		"months": ["1", "2", "3", "4", "8", "9", "10", "11", "12"],
+		"description": "La frisée, variété de laitue à feuilles frisées, ajoute de la texture et une légère amertume aux salades. Sa saveur unique en fait un ingrédient apprécié dans les préparations culinaires."
+	},
+	"13": {
+		"id": "13",
+		"label": "Betterave",
+		"type": "legume",
+		"img_path": "betterave.webp",
+		"months": ["1", "2", "3", "4", "5", "7", "8", "9", "10", "11", "12"],
+		"description": "La betterave, douce et terreuse, est souvent utilisée cuite ou crue dans les salades. Sa couleur vive ajoute une touche visuelle attrayante aux plats."
+	},
+	"14": {
+		"id": "14",
+		"label": "Céleri-branche",
+		"type": "legume",
+		"img_path": "celeri.webp",
+		"months": ["1", "7", "8", "9", "10", "11", "12"],
+		"description": "Le céleri-branche, croquant et aromatique, est souvent utilisé comme ingrédient dans les soupes, les salades et les plats mijotés. Il ajoute de la saveur et de la texture aux préparations."
+	},
+	"15": {
+		"id": "15",
+		"label": "Chou",
+		"type": "legume",
+		"img_path": "chou.webp",
+		"months": ["1", "2", "3", "8", "9", "10", "11", "12"],
+		"description": "Le chou, avec ses nombreuses variétés comme le chou vert, rouge et nappa, est un légume polyvalent en cuisine. Il peut être utilisé cru ou cuit dans une variété de plats."
+	},
+	"16": {
+		"id": "16",
+		"label": "Chou de Bruxelles",
+		"type": "legume",
+		"img_path": "chou_bruxelle.webp",
+		"months": ["1", "2", "3", "10", "11", "12"],
+		"description": "Le chou de Bruxelles, en mini-cabochons, est souvent cuit ou rôti pour adoucir sa saveur. Il ajoute une touche de goût et de couleur aux plats d'hiver."
+	},
+	"17": {
+		"id": "17",
+		"label": "Chou rouge",
+		"type": "legume",
+		"img_path": "chou_rouge.webp",
+		"months": ["1", "2", "10", "11", "12"],
+		"description": "Le chou rouge, avec sa couleur vibrante, est utilisé dans une variété de plats. Il peut être consommé cru en salades ou cuit pour accompagner différents mets."
+	},
+	"26": {
+		"id": "26",
+		"label": "Kiwi",
+		"type": "fruit",
+		"img_path": "kiwi.webp",
+		"months": ["1", "2", "3", "11", "12"],
+		"description": "Le kiwi, fruit acidulé et riche en vitamine C, peut être dégusté frais ou ajouté à des smoothies et des desserts. Sa chair verte et juteuse est appréciée pour son goût unique."
+	},
+	"27": {
+		"id": "27",
+		"label": "Mandarine",
+		"type": "fruit",
+		"img_path": "mandarine.webp",
+		"months": ["1", "2", "11", "12"],
+		"description": "La mandarine, fruit sucré et facile à peler, est une collation pratique et savoureuse. Elle peut également être utilisée dans les préparations culinaires pour ajouter une touche d'arôme."
+	},
+	"29": {
+		"id": "29",
+		"label": "Pamplemousse",
+		"type": "fruit",
+		"img_path": "pamplemousse.webp",
+		"months": ["1", "2", "3", "4", "5", "6"],
+		"description": "Le pamplemousse, avec son goût sucré-acide et rafraîchissant, est souvent consommé en quartiers ou ajouté aux salades. Il est également utilisé pour son jus dans les boissons."
+	},
+	"20": {
+		"id": "20",
+		"label": "Mâche",
+		"type": "legume",
+		"img_path": "mache.webp",
+		"months": ["1", "2", "11", "12"],
+		"description": "La mâche, également appelée doucette, est une laitue à feuilles tendres et délicates. Elle est souvent utilisée comme base pour les salades et ajoute de la douceur aux plats."
+	},
+	"33": {
+		"id": "33",
+		"label": "Citron",
+		"type": "fruit",
+		"img_path": "citron.webp",
+		"months": ["1", "2", "3", "4", "6", "10", "11", "12"],
+		"description": "Le citron, fruit acide aux multiples usages, est utilisé pour son jus, son zeste et sa saveur distinctive. Il ajoute une touche d'acidité à de nombreux plats sucrés et salés."
+	},
+	"35": {
+		"id": "35",
+		"label": "Abricot",
+		"type": "fruit",
+		"img_path": "abricot.webp",
+		"months": ["6", "7", "8"],
+		"description": "L'abricot, fruit doux et juteux, est souvent consommé frais en été. Il peut également être utilisé dans les confitures, les pâtisseries et les desserts."
+	},
+	"36": {
+		"id": "36",
+		"label": "Cassis",
+		"type": "fruit",
+		"img_path": "cassis.webp",
+		"months": ["6", "7", "8"],
+		"description": "Le cassis, petit fruit foncé et aromatique, est souvent utilisé dans les confitures, les pâtisseries et les boissons. Sa saveur acidulée en fait un ingrédient apprécié."
+	},
+	"39": {
+		"id": "39",
+		"label": "Groseille",
+		"type": "fruit",
+		"img_path": "groseille.webp",
+		"months": ["6", "7", "8"],
+		"description": "La groseille, fruit rouge ou blanc, est appréciée pour sa saveur acidulée. Elle peut être utilisée dans les desserts, les sauces et les boissons pour ajouter de la fraîcheur."
+	},
+	"53": {
+		"id": "53",
+		"label": "Mirabelle",
+		"img_path": "mirabelle.webp",
+		"type": "fruit",
+		"months": ["8", "9"],
+		"description": "La mirabelle, petite prune jaune, est souvent consommée fraîche ou transformée en confitures et en liqueurs. Sa chair sucrée en fait un fruit apprécié en été."
+	},
+	"43": {
+		"id": "43",
+		"label": "Prune",
+		"type": "fruit",
+		"img_path": "prune.webp",
+		"months": ["6", "7", "8", "9"],
+		"description": "La prune, fruit sucré et juteux, est souvent consommée fraîche en été. Elle peut également être utilisée dans les pâtisseries, les confitures et les compotes."
+	},
+	"45": {
+		"id": "45",
+		"label": "Figue",
+		"type": "fruit",
+		"img_path": "figue.webp",
+		"months": ["7", "8", "9", "10"],
+		"description": "La figue, fruit sucré et charnu, est souvent dégustée fraîche ou séchée. Elle ajoute une note sucrée aux salades, aux plats de fromage et aux desserts."
+	},
+	"46": {
+		"id": "46",
+		"label": "Myrtille",
+		"type": "fruit",
+		"img_path": "myrtille.webp",
+		"months": ["7", "8", "9", "10"],
+		"description": "La myrtille, petit fruit bleu foncé, est riche en antioxydants. Elle est souvent utilisée dans les desserts, les smoothies et les sauces pour ajouter une saveur délicieuse et saine."
+	},
+	"54": {
+		"id": "54",
+		"label": "Mûre",
+		"type": "fruit",
+		"img_path": "mures.webp",
+		"months": ["8", "9"],
+		"description": "La mûre, fruit noir et sucré, est souvent consommée fraîche ou transformée en confitures, en pâtisseries et en boissons. Sa saveur riche en fait un ingrédient apprécié en été."
+	},
+	"24": {
+		"id": "24",
+		"label": "Amande",
+		"type": "fruit",
+		"img_path": "amande.webp",
+		"months": [
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"10",
+			"11",
+			"12"
+		],
+		"description": "L'amande, fruit sec à coque, est souvent consommée nature ou ajoutée à diverses préparations culinaires. Elle est appréciée pour sa saveur délicate et ses bienfaits nutritifs."
+	},
+	"48": {
+		"id": "48",
+		"label": "Noisette",
+		"type": "fruit",
+		"img_path": "noisette.webp",
+		"months": ["8", "9", "10"],
+		"description": "La noisette, fruit sec à coque, est souvent consommée nature ou utilisée dans les pâtisseries et les confiseries. Sa saveur légèrement sucrée en fait une collation appréciée."
+	},
+	"49": {
+		"id": "49",
+		"label": "Noix",
+		"type": "fruit",
+		"img_path": "noix.webp",
+		"months": ["9", "10"],
+		"description": "La noix, fruit sec à coque, est riche en nutriments et en oméga-3. Elle est souvent consommée nature, ajoutée aux plats ou utilisée dans les desserts et les collations."
+	},
+	"52": {
+		"id": "52",
+		"label": "Châtaigne",
+		"type": "fruit",
+		"img_path": "chataigne.webp",
+		"months": ["10", "11", "12"],
+		"description": "La châtaigne, fruit à coque doux et farineux, est souvent cuite pour révéler sa saveur sucrée. Elle est utilisée dans les plats salés et sucrés en automne et en hiver."
+	},
+	"55": {
+		"id": "55",
+		"label": "Artichaut",
+		"type": "legume",
+		"img_path": "artichaud.webp",
+		"months": ["4", "5", "6", "7", "8", "9"],
+		"description": "L'artichaut est un légume à la saveur délicate et légèrement amère. Ses feuilles charnues peuvent être consommées après avoir été cuites et trempées dans une sauce. Le cœur de l'artichaut est particulièrement apprécié pour sa tendreté."
+	},
+	"56": {
+		"id": "56",
+		"label": "Asperge",
+		"type": "legume",
+		"img_path": "asperge.webp",
+		"months": ["3", "4", "5", "6", "7"],
+		"description": "L'asperge est un légume tendre et délicat, souvent cuit à la vapeur, grillé ou bouilli. Sa saveur douce en fait un ingrédient polyvalent dans une variété de plats."
+	},
+	"57": {
+		"id": "57",
+		"label": "Blette",
+		"type": "legume",
+		"img_path": "blette.webp",
+		"months": ["3", "4", "5", "6", "7", "8", "9", "10"],
+		"description": "La blette, également appelée bette, est un légume à feuilles vertes et tiges charnues. Ses feuilles et ses côtes sont utilisées dans les préparations culinaires pour leur saveur et leur texture uniques."
+	},
+	"58": {
+		"id": "58",
+		"label": "Brocoli",
+		"type": "legume",
+		"img_path": "brocoli.webp",
+		"months": ["6", "7", "8", "9", "10", "11"],
+		"description": "Le brocoli, riche en nutriments, est souvent consommé cuit à la vapeur, sauté ou ajouté aux plats. Ses têtes florales et ses tiges croquantes sont appréciées pour leur saveur et leur apport nutritif."
+	},
+	"59": {
+		"id": "59",
+		"label": "Chou-fleur",
+		"type": "legume",
+		"img_path": "chou_fleur.webp",
+		"months": ["4", "5"],
+		"description": "Le chou-fleur est un légume à la texture délicate qui peut être cuit, grillé ou utilisé pour préparer des purées. Il est souvent utilisé comme alternative aux amidons dans les recettes."
+	},
+	"63": {
+		"id": "63",
+		"label": "Fenouil",
+		"type": "legume",
+		"img_path": "fenouil.webp",
+		"months": ["6", "7", "8", "9", "10", "11"],
+		"description": "Le fenouil a une saveur anisée et une texture croquante. Il peut être consommé cru en salades, cuit dans des plats ou utilisé pour aromatiser les sauces."
+	},
+	"66": {
+		"id": "66",
+		"label": "Patate douce",
+		"type": "legume",
+		"img_path": "patate_douce.webp",
+		"months": ["9", "10"],
+		"description": "La patate douce, sucrée et nutritive, peut être cuite, rôtie, bouillie ou transformée en purée. Sa chair colorée est appréciée pour son goût unique et sa polyvalence en cuisine."
+	},
+	"67": {
+		"id": "67",
+		"label": "Poivron",
+		"type": "legume",
+		"img_path": "poivron.webp",
+		"months": ["6", "7", "8", "9"],
+		"description": "Le poivron, avec ses différentes couleurs et saveurs, est souvent utilisé pour ajouter de la couleur et de la saveur aux plats. Il peut être consommé cru, grillé, rôti ou farci."
+	},
+	"70": {
+		"id": "70",
+		"label": "Aubergine",
+		"type": "legume",
+		"img_path": "aubergine.webp",
+		"months": ["5", "6", "7", "8", "9", "10"],
+		"description": "L'aubergine, avec sa texture tendre et sa saveur douce, est souvent utilisée dans les plats méditerranéens et asiatiques. Elle peut être grillée, rôtie, cuite au four ou sautée."
+	},
+	"68": {
+		"id": "68",
+		"label": "Potiron",
+		"type": "legume",
+		"img_path": "potiron.webp",
+		"months": ["9"],
+		"description": "Le potiron, variété de courge, est souvent utilisé pour préparer des soupes, des purées et des plats d'automne. Sa chair sucrée et orangée est appréciée pour sa saveur caractéristique."
+	},
+	"117": {
+		"id": "117",
+		"label": "Chou romanesco",
+		"type": "legume",
+		"img_path": "romanesco.webp",
+		"months": ["6"],
+		"description": "Le chou romanesco, avec sa forme géométrique unique, est un légume à la texture croquante. Il peut être cuit à la vapeur, rôti ou utilisé dans les salades."
+	},
+	"118": {
+		"id": "118",
+		"label": "Brugnon",
+		"type": "fruit",
+		"img_path": "brugnon.webp",
+		"months": ["6", "7", "8"],
+		"description": "Le brugnon est un fruit juteux et sucré, souvent consommé frais en été. Il peut également être utilisé dans les salades de fruits, les pâtisseries et les confitures."
+	},
+	"119": {
+		"id": "119",
+		"label": "Coing",
+		"type": "fruit",
+		"img_path": "coing.webp",
+		"months": ["9", "10", "11"],
+		"description": "Le coing, fruit à la saveur unique, est souvent utilisé pour préparer des confitures, des gelées et des pâtes de fruits. Sa chair parfumée nécessite une cuisson pour être consommée."
+	},
+	"83": {
+		"id": "83",
+		"label": "Cardon",
+		"type": "legume",
+		"img_path": "cardon.webp",
+		"months": ["11"],
+		"description": "Le cardon est un légume apparenté à l'artichaut, apprécié pour ses tiges charnues et sa saveur légèrement amère. Il est souvent cuit et utilisé dans les plats d'automne."
+	},
+	"85": {
+		"id": "85",
+		"label": "Crosne",
+		"type": "legume",
+		"img_path": "crosne.webp",
+		"months": ["3", "11", "12"],
+		"description": "Le crosne, est un petit tubercule avec une texture croquante et une saveur légèrement sucrée. Il peut être cuit, frit ou utilisé dans les sautés."
+	},
+	"92": {
+		"id": "92",
+		"label": "Navet",
+		"type": "legume",
+		"img_path": "navet.webp",
+		"months": ["1", "2", "3", "4", "5", "6", "10", "11", "12"],
+		"description": "Le navet, avec sa chair ferme et sa saveur douce, peut être consommé cru, cuit ou utilisé dans les ragoûts. Ses feuilles, appelées fanes, sont également comestibles."
+	},
+	"93": {
+		"id": "93",
+		"label": "Panais",
+		"type": "legume",
+		"img_path": "panais.webp",
+		"months": ["1", "2", "3", "9", "10", "11", "12"],
+		"description": "Le panais est un légume racine sucré et aromatique, souvent rôti, cuit au four ou transformé en purée. Sa saveur rappelle celle de la carotte avec une touche d'anis."
+	},
+	"95": {
+		"id": "95",
+		"label": "Radis",
+		"type": "legume",
+		"img_path": "radis.webp",
+		"months": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+		"description": "Le radis est un légume racine croquant et piquant, souvent consommé cru en salades ou utilisé pour ajouter une touche de fraîcheur aux plats. Il existe différentes variétés de radis, chacune avec sa propre saveur distinctive."
+	},
+	"96": {
+		"id": "96",
+		"label": "Salsifi",
+		"type": "legume",
+		"img_path": "salsifi.webp",
+		"months": ["2", "3", "10", "11", "12"],
+		"description": "Le salsifi, également appelé scorsonère, est un légume racine avec une saveur subtile et délicate. Il peut être cuit, frit ou utilisé dans les soupes et les ragoûts."
+	},
+	"69": {
+		"id": "69",
+		"label": "Rutabaga",
+		"type": "legume",
+		"img_path": "rutabaga.webp",
+		"months": ["10", "11", "12"],
+		"description": "Le rutabaga, une croisement entre le navet et le chou, est un légume racine sucré et légèrement piquant. Il peut être utilisé pour préparer des purées, des ragoûts et des plats d'automne."
+	},
+	"97": {
+		"id": "97",
+		"label": "Topinambour",
+		"type": "legume",
+		"img_path": "topinambour.webp",
+		"months": ["1", "2", "3", "10", "11", "12"],
+		"description": "Le topinambour, également appelé artichaut de Jérusalem, est un légume racine avec une saveur douce et légèrement sucrée. Il peut être cuit de différentes manières et est apprécié pour sa texture croquante."
+	},
+	"34": {
+		"id": "34",
+		"label": "Kaki",
+		"type": "fruit",
+		"img_path": "kaki.webp",
+		"months": ["1", "10", "11", "12"],
+		"description": "Le kaki est un fruit doux et juteux, souvent consommé frais en automne. Il peut être mûr et mou, ou ferme et croquant, selon la variété."
+	},
+	"30": {
+		"id": "30",
+		"label": "Physalis",
+		"type": "fruit",
+		"img_path": "physalis.webp",
+		"months": ["1", "2", "10", "11", "12"],
+		"description": "Le physalis, également appelé amour en cage, est un petit fruit enveloppé dans une coque protectrice. Il a une saveur sucrée et acidulée, souvent utilisée dans les desserts et les salades."
+	},
+	"50": {
+		"id": "50",
+		"label": "Pruneau",
+		"type": "fruit",
+		"img_path": "pruneau.webp",
+		"months": ["8", "9"],
+		"description": "Le pruneau, prune séchée, est souvent consommé comme en-cas ou utilisé pour sucrer les plats. Il est riche en fibres et en nutriments bénéfiques pour la digestion."
+	},
+	"51": {
+		"id": "51",
+		"label": "Baie de goji",
+		"type": "fruit",
+		"img_path": "baies_goji.webp",
+		"months": ["8", "9", "10"],
+		"description": "La baie de goji est un petit fruit rouge séché, réputé pour ses bienfaits nutritionnels. Elle est souvent consommée seule ou ajoutée aux smoothies, aux céréales et aux salades."
+	},
+	"98": {
+		"id": "98",
+		"label": "Lentille",
+		"type": "cereale",
+		"img_path": "lentille.webp",
+		"months": ["1", "2", "3", "11", "12"],
+		"description": "La lentille est une légumineuse riche en protéines et en fibres. Elle est souvent utilisée dans les plats végétariens et les soupes pour sa texture et sa saveur caractéristiques."
+	},
+	"99": {
+		"id": "99",
+		"label": "Avoine",
+		"type": "cereale",
+		"img_path": "avoine.webp",
+		"months": ["6", "7", "8", "12"],
+		"description": "L'avoine est une céréale populaire, souvent consommée sous forme de flocons pour le petit-déjeuner ou utilisée dans la cuisson. Elle est riche en fibres et en nutriments essentiels."
+	},
+	"100": {
+		"id": "100",
+		"label": "Orge",
+		"type": "cereale",
+		"img_path": "orge.webp",
+		"months": ["6", "7", "8", "8", "12"],
+		"description": "L'orge est une céréale polyvalente, souvent utilisée dans les soupes, les salades et les plats d'accompagnement. Elle a une texture moelleuse et une saveur légèrement noisette."
+	},
+	"101": {
+		"id": "101",
+		"label": "Pois",
+		"type": "cereale",
+		"img_path": "pois.webp",
+		"months": ["6", "7", "8", "12"],
+		"description": "Le pois, une légumineuse, est souvent utilisé dans les plats salés et les salades. Il est riche en protéines végétales et en nutriments bénéfiques pour la santé."
+	},
+	"102": {
+		"id": "102",
+		"label": "Seigle",
+		"type": "cereale",
+		"img_path": "seigle.webp",
+		"months": ["6", "7", "8", "12"],
+		"description": "Le seigle est une céréale utilisée pour fabriquer du pain, des céréales et des boissons alcoolisées. Il a une saveur robuste et est souvent associé à une alimentation saine."
+	},
+	"103": {
+		"id": "103",
+		"label": "Blé",
+		"type": "cereale",
+		"img_path": "ble.webp",
+		"months": ["7", "8", "12"],
+		"description": "Le blé est l'une des céréales les plus couramment cultivées et utilisées dans l'alimentation humaine. Il est transformé en farine pour faire du pain, des pâtisseries et d'autres produits."
+	},
+	"105": {
+		"id": "105",
+		"label": "Fève",
+		"type": "cereale",
+		"img_path": "feve.webp",
+		"months": ["7", "8", "12"],
+		"description": "La fève, également appelée féverole, est une légumineuse avec une saveur douce et une texture tendre. Elle est souvent utilisée dans les plats cuisinés et les soupes."
+	},
+	"106": {
+		"id": "106",
+		"label": "Haricot blanc",
+		"type": "cereale",
+		"img_path": "haricot_blanc.webp",
+		"months": ["7", "8", "9", "10"],
+		"description": "Le haricot blanc est une légumineuse polyvalente, souvent utilisée dans les plats salés et les soupes. Il est riche en protéines et en fibres, ce qui en fait un ingrédient nutritif."
+	},
+	"107": {
+		"id": "107",
+		"label": "Maïs",
+		"type": "cereale",
+		"img_path": "mais.webp",
+		"months": ["7", "8", "9", "10", "11"],
+		"description": "Le maïs est une céréale riche en amidon, souvent consommée cuite, grillée ou transformée en produits alimentaires variés. Il est également utilisé comme ingrédient dans de nombreux plats."
+	},
+	"108": {
+		"id": "108",
+		"label": "Quinoa",
+		"type": "cereale",
+		"img_path": "quinoa.webp",
+		"months": ["8", "9", "10"],
+		"description": "Le quinoa est une pseudo-céréale riche en protéines et en nutriments essentiels. Il est souvent utilisé comme alternative aux céréales traditionnelles et est apprécié pour sa texture légère et sa saveur subtile."
+	},
+	"109": {
+		"id": "109",
+		"label": "Riz",
+		"type": "cereale",
+		"img_path": "riz.webp",
+		"months": ["9", "10"],
+		"description": "Le riz est l'une des céréales les plus consommées dans le monde. Il existe de nombreuses variétés, chacune avec sa propre texture et saveur. Il peut être utilisé dans une grande variété de plats."
+	},
+	"110": {
+		"id": "110",
+		"label": "Sarrasin",
+		"type": "cereale",
+		"img_path": "sarrasin.webp",
+		"months": ["9", "10"],
+		"description": "Le sarrasin est une pseudo-céréale sans gluten, souvent utilisée pour préparer des crêpes, des galettes et des plats d'accompagnement. Il a une saveur distinctive et est riche en nutriments."
+	},
+	"111": {
+		"id": "111",
+		"label": "Soja",
+		"type": "cereale",
+		"img_path": "soja.webp",
+		"months": ["10"],
+		"description": "Le soja est une légumineuse riche en protéines végétales et en isoflavones. Il est transformé en divers produits tels que le tofu, le lait de soja et les produits à base de viande végétalienne."
+	},
+	"112": {
+		"id": "112",
+		"label": "Tournesol",
+		"type": "cereale",
+		"img_path": "tournesol.webp",
+		"months": ["9"],
+		"description": "Les graines de tournesol sont souvent consommées comme collation ou ajoutées aux salades, aux pains et aux produits de boulangerie. Elles sont riches en acides gras essentiels et en vitamines."
+	},
+	"1": {
+		"id": "1",
+		"label": "Ail",
+		"type": "legume",
+		"img_path": "ail.webp",
+		"months": [
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"10",
+			"11",
+			"12"
+		],
+		"description": "L'ail est un légume aromatique couramment utilisé pour ajouter de la saveur aux plats. Il possède également des propriétés médicinales et est utilisé depuis longtemps pour ses bienfaits pour la santé."
+	}
 }

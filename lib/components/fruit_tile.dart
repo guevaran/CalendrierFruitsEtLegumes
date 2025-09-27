@@ -31,7 +31,7 @@ class _FruitTileState extends State<FruitTile> {
               child: Hero(
                 tag: (widget.fruit['img_path'] != null) ? widget.fruit['img_path'] : 'f${widget.fruit['id']}',
                 child: Image(
-                  image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/default_fruit.png'),
+                  image: AssetImage((widget.fruit['img_path'] != null) ? 'assets/imgs/${widget.fruit['img_path']}' : 'assets/imgs/default_fruit.webp'),
                   // height: 70,
                   fit: BoxFit.contain,
                 ),
