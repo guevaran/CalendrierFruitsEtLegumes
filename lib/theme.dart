@@ -25,8 +25,8 @@ ThemeData lightTheme() {
   return theme.copyWith(
     colorScheme: lightColorScheme,
     //appBarTheme: theme.appBarTheme.copyWith(backgroundColor: lightColorScheme.primary),
-    scaffoldBackgroundColor: lightColorScheme.background,
-    bottomNavigationBarTheme: theme.bottomNavigationBarTheme.copyWith(backgroundColor: lightColorScheme.background),
+    scaffoldBackgroundColor: lightColorScheme.surface,
+    bottomNavigationBarTheme: theme.bottomNavigationBarTheme.copyWith(backgroundColor: lightColorScheme.surface),
     textTheme: GoogleFonts.handleeTextTheme(theme.textTheme), // kiwiMaru handlee comingSoon annieUseYourTelescope
   );
 }

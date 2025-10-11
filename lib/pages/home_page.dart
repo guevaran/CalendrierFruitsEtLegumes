@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
               bool notShowInitDialog = false;
               return StatefulBuilder(
                 builder: (context, setState) => AlertDialog(
-                  backgroundColor: Theme.of(context).colorScheme.background,
+                  backgroundColor: Theme.of(context).colorScheme.surface,
                   contentPadding: const EdgeInsets.only(top: 20, right: 20, left: 20, bottom: 0),
                   content: Column(
                     mainAxisSize: MainAxisSize.min,
@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> {
               title: const Text('Calendrier Fruits et Légumes'),
               actions: [
                 PopupMenuButton(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                   icon: const Icon(Icons.sort),
                   itemBuilder: (context) {
                     return [
@@ -162,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                   },
                 ),
                 PopupMenuButton(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                   itemBuilder: (context) => [
                     const PopupMenuItem(
                       value: 'donate',
@@ -190,7 +190,7 @@ class _HomePageState extends State<HomePage> {
                               webOnlyWindowName: '_blank',
                             );
                             if (!ok && context.mounted) {
-                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Impossible d\’ouvrir Ko‑fi')));
+                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Impossible d’ouvrir Ko‑fi')));
                             }
                           } catch (e) {
                             debugPrint("Error: $e");
@@ -208,7 +208,7 @@ class _HomePageState extends State<HomePage> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     boxShadow: <BoxShadow>[BoxShadow(color: Theme.of(context).colorScheme.secondary, blurRadius: 4.0, offset: const Offset(0.0, 0.60))],
-                    color: Theme.of(context).colorScheme.background,
+                    color: Theme.of(context).colorScheme.surface,
                   ),
                   // child: SingleChildScrollView(
                   //   scrollDirection: Axis.horizontal,

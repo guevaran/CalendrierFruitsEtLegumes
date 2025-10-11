@@ -21,7 +21,7 @@ class _ListeState extends State<Liste> {
   List<dynamic>? _filteredFruits;
   final LinkedScrollControllerGroup _monthsScrollControllers = LinkedScrollControllerGroup();
   final _searchController = TextEditingController();
-  FocusNode _searchFocus = FocusNode();
+  final FocusNode _searchFocus = FocusNode();
 
   @override
   void setState(fn) {
@@ -137,7 +137,7 @@ class _ListeState extends State<Liste> {
           width: double.infinity,
           decoration: BoxDecoration(
             boxShadow: <BoxShadow>[BoxShadow(color: Theme.of(context).colorScheme.secondary, blurRadius: 4.0, offset: const Offset(0.0, -0.60))],
-            color: Theme.of(context).colorScheme.background,
+            color: Theme.of(context).colorScheme.surface,
             border: Border(
               bottom: BorderSide(
                 width: 2,
