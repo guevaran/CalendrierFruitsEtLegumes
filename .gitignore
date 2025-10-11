@@ -1,44 +1,100 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# =========================================
+# Flutter / Dart
+# =========================================
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
-.pub-cache/
 .pub/
-/build/
+build/
+coverage/
+generated_plugin_registrant.dart
+pubspec.lock
 
-# Symbolication related
-app.*.symbols
+# =========================================
+# IDE & Editor Settings
+# =========================================
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*.DS_Store
+*.log
+*.tmp
+*.bak
+*.orig
 
-# Obfuscation related
-app.*.map.json
+# =========================================
+# Android
+# =========================================
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/key.properties
+**/android/app/*.keystore
+**/android/app/*.jks
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# =========================================
+# iOS
+# =========================================
+**/ios/Flutter/.last_build_id
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner.xcworkspace/
+**/ios/Runner.xcuserstate
+
+# =========================================
+# macOS
+# =========================================
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# =========================================
+# Windows
+# =========================================
+**/windows/flutter/ephemeral/
+**/windows/Flutter/GeneratedPluginRegistrant.*
+
+# =========================================
+# Linux
+# =========================================
+**/linux/flutter/ephemeral/
+**/linux/Flutter/GeneratedPluginRegistrant.*
+
+# =========================================
+# Web
+# =========================================
+**/web/.dart_tool/
+
+# =========================================
+# Firebase (optional)
+# =========================================
+**/google-services.json
+**/GoogleService-Info.plist
+
+# =========================================
+# FVM (Flutter Version Manager)
+# =========================================
+.fvm/
+
+# =========================================
+# Fastlane (if using CI/CD)
+# =========================================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+
+# =========================================
+# Miscellaneous
+# =========================================
+*.lock
+*.pid
+*.seed
