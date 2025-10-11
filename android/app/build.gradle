@@ -79,6 +79,13 @@ android {
 
 }
 
+// Improve reproducibility: disable baseline profile tasks that can be non-deterministic.
+tasks.whenTaskAdded { task ->
+    if (task.name.contains("ArtProfile")) {
+        task.enabled = false
+    }
+}
+
 flutter {
     source '../..'
 }

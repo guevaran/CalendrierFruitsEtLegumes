@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 ColorScheme lightColorScheme = ColorScheme.fromSeed(
   seedColor: const Color(0xff9DD2A8),
@@ -27,6 +26,6 @@ ThemeData lightTheme() {
     //appBarTheme: theme.appBarTheme.copyWith(backgroundColor: lightColorScheme.primary),
     scaffoldBackgroundColor: lightColorScheme.surface,
     bottomNavigationBarTheme: theme.bottomNavigationBarTheme.copyWith(backgroundColor: lightColorScheme.surface),
-    textTheme: GoogleFonts.handleeTextTheme(theme.textTheme), // kiwiMaru handlee comingSoon annieUseYourTelescope
+    textTheme: theme.textTheme.apply(fontFamily: 'Handlee'), // bundled Handlee font
   );
 }

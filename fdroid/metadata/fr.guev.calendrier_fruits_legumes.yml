@@ -1,0 +1,56 @@
+Categories:
+  - Science & Education
+  - Sports & Health
+License: MIT
+AuthorName: Nicolas Guevara
+AuthorEmail: nicolas.guevara.pro1@gmail.com
+WebSite: https://github.com/guevaran/CalendrierFruitsEtLegumes
+SourceCode: https://github.com/guevaran/CalendrierFruitsEtLegumes
+IssueTracker: https://github.com/guevaran/CalendrierFruitsEtLegumes/issues
+Changelog: https://github.com/guevaran/CalendrierFruitsEtLegumes/releases
+
+AutoName: Calendrier Fruits et Légumes
+RepoType: git
+Repo: https://github.com/guevaran/CalendrierFruitsEtLegumes.git
+
+# Optional summary/description
+Summary: Fruits, légumes et céréales de saison en France
+Description: |
+  Application libre qui aide à choisir des fruits, légumes et céréales de saison en France.
+  - Recherche par mois
+  - Affichage rapide avec images WebP
+  - Thème simple avec police locale Handlee
+  - Pas de suivi, pas de pubs
+
+# Anti-features (leave empty unless really applicable)
+AntiFeatures:
+
+# Build metadata
+Builds:
+  - versionName: 0.2.0
+    versionCode: 2
+    commit: dd60cb0
+    subdir: .
+    gradle:
+      - yes
+    rm:
+      - ios
+      - macos
+      - windows
+      - linux
+      - web
+    srclibs:
+    prebuild:
+      - sdkmanager --licenses || true
+    build:
+      - ./gradlew assembleRelease
+    output:
+      - build/app/outputs/flutter-apk/app-release.apk
+
+AutoUpdateMode: Version
+UpdateCheckMode: Version
+UpdateCheckData: pubspec.yaml|^version:\s*([0-9.]+)\+([0-9]+)
+CurrentVersion: 0.2.0
+CurrentVersionCode: 2
+
+RequiresRoot: False
