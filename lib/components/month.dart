@@ -21,7 +21,7 @@ class _MonthState extends State<Month> {
   bool _isSelected() => (widget.selected == int.parse(widget.month['id']));
 
   Color _bgColor(BuildContext context) {
-    Color color = Theme.of(context).colorScheme.background;
+    Color color = Theme.of(context).colorScheme.surface;
     if (widget.fruit != null && widget.fruit["months"] != null) {
       for (String mid in widget.fruit["months"]) {
         if (mid == widget.month["id"]) {
@@ -36,7 +36,7 @@ class _MonthState extends State<Month> {
   }
 
   Color _fontColor(BuildContext context) {
-    Color color = Theme.of(context).colorScheme.onBackground;
+    Color color = Theme.of(context).colorScheme.onSurface;
     if (widget.fruit != null && widget.fruit["months"] != null) {
       for (String mid in widget.fruit["months"]) {
         if (mid == widget.month["id"]) {
