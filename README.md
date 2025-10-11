@@ -19,7 +19,7 @@ Note: Data is France-focused. Results are not suitable outside France.
 ## Tech stack
 
 -   Flutter 3 (Dart >= 3.0.5)
--   Packages: shared_preferences, url_launcher, scrollable_positioned_list, linked_scroll_controller, google_fonts, simple_icons
+-   Packages: shared_preferences, url_launcher, scrollable_positioned_list, linked_scroll_controller, simple_icons
 -   Assets: images in `assets/imgs/`, JSON data in `assets/json/`
 
 ## Getting started
@@ -74,7 +74,7 @@ Outputs are generated under `build/`.
 -   `lib/` — Flutter code (pages, components, theme, utils)
     -   `pages/` — Home and detail screens
     -   `components/` — UI widgets (calendar, list, tiles)
-    -   `theme.dart` — Color scheme and fonts (Google Fonts Handlee)
+    -   `theme.dart` — Color scheme and fonts (bundled Handlee)
 -   `assets/json/` — Data files (`months.json`, `fruits.json`)
 -   `assets/imgs/` — Product images (fallback provided)
 -   `assets/logo/` — App icons and logo

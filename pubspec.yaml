@@ -15,7 +15,6 @@ dependencies:
   url_launcher: ^6.1.12
   simple_icons: ^7.10.0
   flutter_launcher_icons: ^0.13.1
-  google_fonts: ^5.1.0
   shared_preferences: ^2.2.1
 
 flutter_launcher_icons:
@@ -40,3 +39,7 @@ flutter:
     - assets/imgs/
     - assets/logo/
     - assets/google_fonts/
+  fonts:
+    - family: Handlee
+      fonts:
+        - asset: assets/google_fonts/Handlee-Regular.ttf
