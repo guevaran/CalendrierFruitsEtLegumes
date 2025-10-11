@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_icons/simple_icons.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 ///The 4 Official Kofi Button Colors
 enum KofiColor { blue, black, orange, red, grey }
@@ -39,28 +39,25 @@ class KofiButton extends StatelessWidget {
     this.onLaunchURL,
     this.isEnabled = true,
   }) : super(key: key);
-
-  ///Base Url: https://ko-fi.com/ <- your account name will be appended to its
+  
   final String baseUrl = "https://ko-fi.com/";
 
   @override
   Widget build(BuildContext context) {
     assert(kofiName.isNotEmpty);
-    // final Map<String, Color> _colors = {
-    //   "KofiColor.Blue": Color(0xff29ABE0),
-    //   "KofiColor.Red": Color(0xffFF5E5B),
-    //   "KofiColor.Orange": Color(0xffFBAA19),
-    //   "KofiColor.Black": Color(0xff434B57),
-    //   "KofiColor.Grey": Color(0xff9E9E9E)
-    // };
     return ElevatedButton.icon(
       onPressed: !isEnabled
           ? null
           : () async {
               try {
+                final url = baseUrl + kofiName;
                 await (onLaunchURL != null
-                    ? onLaunchURL!(baseUrl + kofiName)
-                    : launchUrlString(baseUrl + kofiName));
+                    ? onLaunchURL!(url)
+                    : launchUrl(
+                        Uri.parse(url),
+                        mode: LaunchMode.externalApplication,
+                        webOnlyWindowName: '_blank',
+                      ));
               } catch (e) {
                 debugPrint("Error: $e");
               }
@@ -71,34 +68,5 @@ class KofiButton extends StatelessWidget {
       icon: const Icon(SimpleIcons.kofi),
       label: Text(text),
     );
-    // previous code
-    // return ElevatedButton.icon(
-    //   onPressed: !isEnabled
-    //       ? null
-    //       : () async {
-    //           try {
-    //             await (onLaunchURL != null
-    //                 ? onLaunchURL!(baseUrl + kofiName)
-    //                 : launchUrlString(baseUrl + kofiName));
-    //           } catch (e) {
-    //             debugPrint("Error: $e");
-    //           }
-    //           if (onDonation != null) {
-    //             onDonation!();
-    //           }
-    //         },
-    //   icon: Icon(SimpleIcons.kofi),
-    //   label: Text(text),
-    //   style: style == null
-    //       ? ElevatedButton.styleFrom(
-    //           backgroundColor: isEnabled
-    //               ? _colors[kofiColor.toString()]
-    //               : _colors[KofiColor.Grey.toString()])
-    //       : ButtonStyle(
-    //               backgroundColor: MaterialStateProperty.all<Color?>(isEnabled
-    //                   ? _colors[kofiColor.toString()]
-    //                   : _colors[KofiColor.Grey.toString()]))
-    //           .merge(style),
-    // );
   }
 }
