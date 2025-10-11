@@ -4,28 +4,25 @@ Categories:
 License: MIT
 AuthorName: Nicolas GUEVARA
 AuthorEmail: nicolas.guevara.pro1@gmail.com
+AuthorWebSite: https://nicolas.guev.fr
 WebSite: https://github.com/guevaran/CalendrierFruitsEtLegumes
 SourceCode: https://github.com/guevaran/CalendrierFruitsEtLegumes
 IssueTracker: https://github.com/guevaran/CalendrierFruitsEtLegumes/issues
 Changelog: https://github.com/guevaran/CalendrierFruitsEtLegumes/releases
+Donate: https://ko-fi.com/nicolasguevara
 
-AutoName: Calendrier Fruits et Légumes
+AutoName: Calendrier Fruits et Legumes
+Summary: Fruits, legumes et cereales de saison en France
+Description: |
+  Application libre qui aide a choisir des fruits, legumes et cereales de saison en France.
+  - Recherche par mois
+  - Affichage rapide avec images WebP
+  - Theme simple avec police locale Handlee
+  - Pas de suivi, pas de pubs
+
 RepoType: git
 Repo: https://github.com/guevaran/CalendrierFruitsEtLegumes.git
 
-# Optional summary/description
-Summary: Fruits, légumes et céréales de saison en France
-Description: |
-  Application libre qui aide à choisir des fruits, légumes et céréales de saison en France.
-  - Recherche par mois
-  - Affichage rapide avec images WebP
-  - Thème simple avec police locale Handlee
-  - Pas de suivi, pas de pubs
-
-# Anti-features (leave empty unless really applicable)
-AntiFeatures:
-
-# Build metadata
 Builds:
   - versionName: 1.0.0
     versionCode: 3
@@ -33,24 +30,18 @@ Builds:
     subdir: .
     gradle:
       - yes
+    output: "['build/app/outputs/flutter-apk/app-release.apk']"
     rm:
       - ios
       - macos
       - windows
       - linux
       - web
-    srclibs:
-    prebuild:
-      - sdkmanager --licenses || true
-    build:
-      - ./gradlew assembleRelease
-    output:
-      - build/app/outputs/flutter-apk/app-release.apk
+    prebuild: sdkmanager --licenses || true
+    build: ./gradlew assembleRelease
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-UpdateCheckData: ^v(.*)$
+UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.0.0
 CurrentVersionCode: 3
-
-RequiresRoot: False
